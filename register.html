@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Registratie - Orange League</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="home.html">
+      <img src="logo.png" alt="Orange League Logo" class="logo">
+    </a>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="register.html">Registratie</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Registratie</h1>
+    <form id="registerForm">
+      <label>
+        <input type="checkbox" name="nieuwsbrief"> Inschrijven voor nieuwsbrief
+      </label><br>
+      <label>
+        <input type="checkbox" name="toernooien"> Meedoen aan toernooien
+      </label><br>
+      <label>
+        <input type="checkbox" name="community"> Deel uitmaken van de community
+      </label><br>
+
+      <button type="submit">Opslaan</button>
+    </form>
+    <p id="status"></p>
+  </main>
+
+  <footer>
+    <p>© 2025 Orange League</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById("registerForm");
+    const status = document.getElementById("status");
+
+    // Vinkjes laden
+    window.onload = () => {
+      [...form.elements].forEach(input => {
+        if (input.type === "checkbox") {
+          input.checked = localStorage.getItem(input.name) === "true";
+        }
+      });
+    };
+
+    // Vinkjes opslaan
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      [...form.elements].forEach(input => {
+        if (input.type === "checkbox") {
+          localStorage.setItem(input.name, input.checked);
+        }
+      });
+      status.textContent = "Instellingen opgeslagen!";
+    });
+  </script>
+</body>
+</html>
