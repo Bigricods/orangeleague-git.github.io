@@ -1,29 +1,776 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <title>Titel hier - Orange League</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <a href="home.html">
-      <img src="logo.png" alt="Orange League Logo" class="logo">
+<body class="wp-singular page-template-default page page-id-6194 wp-theme-unboxnow-du theme3"><div id="didomi-host" class="didomi-host" data-nosnippet="true" aria-hidden="true" lang="nl" data-lang-dir="ltr"></div><div id="cookieButton" style="position: fixed; bottom: 2%; right: 1%; display: flex; justify-content: center; align-items: center; width: 38.7px; height: 38.7px; font-size: 0.8em; text-align: center; z-index: 10000; background-color: white; border-radius: 4px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); padding: 0; overflow: hidden;">
+    <a href="javascript:Didomi.preferences.show()" style="display: block;">
+        <img src="https://cdn.svc.asmodee.net/production-asmodeees/uploads/image-converter/2025/05/cookies-jaune-asmodee-2.webp" height="43px" width="43px" alt="Cookie Preferences" style="display: block;">
     </a>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="register.html">Registratie</a>
-    </nav>
-  </header>
+</div>
 
-  <main>
-    <h1>Paginatitel</h1>
-    <p>Inhoud hier.</p>
-  </main>
+<script>
+window.didomiConfig = {
+  languages: {
+    enabled: ['en', 'es', 'fr', 'de', 'cs', 'nl', 'it', 'sv'],
+    default: 'nl'
+  },
+  tagManager: {
+    provider: 'gtm',
+    dataLayerName: 'dataLayer'
+  },
+  theme: {
+    css:
+      '.didomi-popup-container {' +
+        'border-radius: 56px !important;' +
+        'box-shadow: 0px 3px 0px 0px #18181B;' +
+        'border: 2px solid #18181B !important;' +
+      '}' +
+      '.didomi-exterior-border, .didomi-popup__exterior-border {' +
+        'border: none !important;' +
+        'box-shadow: none !important;' +
+        'background: none !important;' +
+      '}' +
+      '.didomi-exterior-border, .didomi-components-radio__option, .didomi-consent-popup-view-vendors-list-link {' +
+        'border-radius: 56px !important;' +
+      '}' +
+      '.didomi-buttons .didomi-button, .didomi-buttons .didomi-button-highlight, .didomi-buttons .didomi-accept-button, #didomi-notice-learn-more-button, #didomi-host .didomi-save-button {' +
+        'background-color: #FFBC00 !important;' +
+        'color: #18181B !important;' +
+        'border: 2px solid #18181B !important;' +
+        'border-radius: 56px !important;' +
+        'padding: 16px 28px 16px 20px !important;' +
+        'font-family: "Museo Sans Rounded", arial, sans-serif !important;' +
+        'font-weight: bold !important;' +
+        'box-shadow: 2px 2px 5px #000000 !important;' +
+      '}' +
+      '#didomi-host .didomi-consent-popup-preferences-purposes .didomi-consent-popup-footer .didomi-buttons-all button:last-child {' +
+        'background-color: #FFBC00 !important;' +
+        'color: #18181B !important;' +
+        'border: 2px solid #18181B !important;' +
+        'border-radius: 56px !important;' +
+        'font-family: "Museo Sans Rounded", arial, sans-serif !important;' +
+        'font-weight: bold !important;' +
+        'padding: 16px 28px 16px 20px !important;' +
+        'box-shadow: 2px 2px 5px #000000 !important;' +
+        'opacity: 1 !important;' +
+        'filter: none !important;' +
+      '}' +
+      '#didomi-host .didomi-popup-footer .didomi-buttons {' +
+        'display: flex !important;' +
+        'align-items: center !important;' +
+        'justify-content: flex-end !important;' +
+        'gap: 8px;' +
+        'padding: 16px 24px !important;' +
+        'height: auto !important;' +
+      '}' +
+      '#didomi-host .didomi-buttons .standard-button {' + 
+        'background-color: #fff !important;' +
+      '}' +
+      '#didomi-host #btn-toggle-save, #didomi-host .didomi-consent-popup-preferences-vendors .didomi-popup-footer .didomi-buttons .didomi-button-highlight {' +
+        'padding: 8px 20px 8px 20px !important;' +
+      '}' +
+      '#didomi-host #btn-toggle-save.disabled,#didomi-host #btn-toggle-save:disabled {' +
+        'opacity: .7 !important;' +
+        'box-shadow: 2px 4px 0px 0px #9F9FA9 !important;' +
+        'border-color: #9F9FA9 !important;' +
+        'background-color: #F4F4F5 !important;' +
+      '}' +
+      '#didomi-notice, .didomi-banner-notice-optin-type, .didomi-popup, .didomi-popup::before, .didomi-popup::after, .didomi-banner-notice-optin-type::before, .didomi-banner-notice-optin-type::after, .didomi-exterior-border, .didomi-popup__exterior-border {' +
+        'border-top: 1px solid #FFBC00 !important;' +
+        'border: none !important;' +
+        'box-shadow: none !important;' +
+        'outline: none !important;' +
+        'background: none !important;' +
+        'background-image: none !important;' +
+      '}' +
+      '#didomi-host .didomi-popup-footer {' +
+        'background: none !important;' +
+        'border-top: none !important;' +
+      '}' +
+      '#didomi-notice p, #didomi-notice p > span {' +
+        'font-size: 0.8em;' +
+      '}' +
+      '#didomi-host .didomi-notice-data-processing-container {' +
+        'padding-top: 5px;' +
+      '}' +
+      '#didomi-host .didomi-banner-notice-optin-type .didomi-continue-without-agreeing {' +
+        'color: #FFBC00;' +
+        'font-size: 0.8em;' +
+      '}' +
+      '#didomi-host .didomi-notice-data-processing-container .didomi-notice-data-processing-list {' +
+        'color: #FFBC00;' +
+      '}' +
+      '#didomi-popup > div > div.didomi-popup-container {' +
+        'background: white url("https://cdn.svc.asmodee.net/production-asmodeefrv2/uploads/2025/01/Frame-51158-e1737452340146.png") no-repeat top right;' +
+        'background-size: 34% !important;' +
+      '}' +
+      '#didomi-host .didomi-popup-container .didomi-popup-notice-logo-container {' +
+        'text-align: left !important;' +
+      '}' +
+      '#didomi-popup > div > div > div > div.didomi-popup-notice-text-container > div > div > ul {' +
+        'margin-top: 7px;' +
+      '}' +
+      '#didomi-popup > div > div > div > div.didomi-popup-notice-text-container > div > div > ul > li {' +
+        'margin: 0;' +
+        'padding-left: 20px;' +
+        'list-style: none;' +
+        'background-image: url("https://cdn.svc.asmodee.net/production-asmodeefrv2/uploads/image-converter/2025/06/Check.webp");' +
+        'background-repeat: no-repeat;' +
+        'background-position: left center;' +
+        'background-size: 15px;' +
+      '}' +
+      '#didomi-notice-x-button {' +
+        'background: #FFBC00 !important;' +
+      '}',
+    font: "'Museo Sans Rounded', arial, sans-serif",
+    borderColor: '#FFBC00',
+    linkColor: '#18181B',
+    buttons: {
+      regularButtons: {
+        background: '#FFBC00',
+        borderRadius: '56px',
+        textColor: '#18181B',
+        border: '2px solid #18181B'
+      },
+      highlightButtons: {
+        backgroundColor: '#FFBC00',
+        borderRadius: '56px',
+        textColor: '#18181B',
+        border: '2px solid #18181B'
+      }
+    }
+  }
+};
+</script>
 
-  <footer>
-    <p>© 2025 Orange League</p>
-  </footer>
-</body>
-</html>
+<script type="text/javascript">(function(){(function(e,r){var t=document.createElement("link");t.rel="preconnect";t.as="script";var n=document.createElement("link");n.rel="dns-prefetch";n.as="script";var i=document.createElement("script");i.id="spcloader";i.type="text/javascript";i["async"]=true;i.charset="utf-8";var o="https://sdk.privacy-center.org/"+e+"/loader.js?target_type=notice&target="+r;if(window.didomiConfig&&window.didomiConfig.user){var a=window.didomiConfig.user;var c=a.country;var d=a.region;if(c){o=o+"&country="+c;if(d){o=o+"&region="+d}}}t.href="https://sdk.privacy-center.org/";n.href="https://sdk.privacy-center.org/";i.src=o;var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s);s.parentNode.insertBefore(n,s);s.parentNode.insertBefore(i,s)})("6eea7c9c-1fe7-4ba1-9b6f-1e1abfaa5f06","dyEXnG32")})();</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KWJFF5H');</script>
+<!-- End Google Tag Manager --><link rel="icon" href="https://cdn.svc.asmodee.net/production-asmodeenl/uploads/2025/06/PNG-72-DPI-A_Icon_Asmodee_RGB-150x150.png" sizes="32x32">
+<link rel="icon" href="https://cdn.svc.asmodee.net/production-asmodeenl/uploads/2025/06/PNG-72-DPI-A_Icon_Asmodee_RGB.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://cdn.svc.asmodee.net/production-asmodeenl/uploads/2025/06/PNG-72-DPI-A_Icon_Asmodee_RGB.png">
+<meta name="msapplication-TileImage" content="https://cdn.svc.asmodee.net/production-asmodeenl/uploads/2025/06/PNG-72-DPI-A_Icon_Asmodee_RGB.png">
+    
+
+
+            <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWJFF5H"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+        <header class="header z-50 !sticky top-0">
+        <div class="header__body"><div id="widget-asmodee-topbar"><div class="header__top-bar  asmodee-new-design">
+    <div class="asmodee-websites">
+    
+        
+            
+                
+                    <a href="/" title="Home" class="accueil" target=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAUCAMAAAC+oj0CAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAVZQTFRFAAAAAAAAzc3N5OTkv7+/8fHx8/Pzy8vL+vr6/////////f39fn5++/v7/////////f39+fn5/////////v7++vr6/////Pz8ra2t/Pz8/////v7+/v7+////////////7e3t/v7+////+fn5/Pz8/f39/////f397u7u/v7+/////////f39+/v7/f39+vr6+/v7/////v7+/v7+/f39/////////v7+/Pz8/v7+/f39uLi4/Pz8////+vr6/v7+////+vr6/v7+/////v7+6enp2dnZ/v7+////9/f3/v7+/////v7+////+Pj43t7e/f399fX1////+Pj4+/v7+Pj4AgIC6urq////////+Pj48/Pz+vr6/v7++/v7+Pj4/////v7+/f39/v7+/f398fHx/////v7+////+/v7FxcX9vb2+fn5+fn58PDw29vb+Pj4xsbGkhM3jQAAAHJ0Uk5TAgEFCQQQEgUx4PleAj76/1Y44fN0Rf5aBmPxqYL1+8UOnfgnPU/qWhav/fRtPGk+OMDbXFvs/I1AtmUENswpfK0mmvdqCwZ7txym04a7HgtjILMsSCcCE9HlMxMnfTMSn2AyoGARz5vvMQEYJCMPBx8EqFNCmwAAAPRJREFUeJxjYCAJMMIBEzMjIwsrGzuIjRDm4OTi5uHl4xcAC8OAoBA/v7CIqBi/OJJREpJS/NIysnLyMGGwAQqKSnwyyiqqavz8/OpwQzQ0tbR1dDmF9fQ5+fm5YaoNDPmNjE1M+fnNzC0s+TmtwC6xthHWsrWzN+MHAQdHJ2d+F1egsJs7v4enlyxYlN/M285HztcPZLZ/QGAQPxwIBYeEhkGcFx4B5HNFRgoDKakouAOjQcJBMTGxIOE4uOfjQcIJjIyJIOEkuDBYdTIjYwqq6tQ0ID+dkdEYSGVkwoWzsnNyc/MYGfNzc3MKClFCEGc0IAMAJeckg1yMkokAAAAASUVORK5CYII="> Home</a>
+                
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                
+                    <a href="https://www.hobbynext.nl/" title="Hobby Next" class="" target="_blank"><svg width="20" height="20" viewBox="0 0 870 755" version="1.1" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="Layer-1" serif:id="Layer 1"><g transform="matrix(1,0,0,1,567.352,237.621)"><path d="M0,278.691L86.362,139.953L86.362,139.71L0,1.214L-127.814,-203.736L-127.814,47.885L-323.176,47.885L-323.176,-207.621L-537.353,-207.621L-537.353,486.312L-323.176,486.312L-323.176,221.642L-127.814,221.642L-127.814,483.946L0,278.691Z" style="fill:white;fill-rule:nonzero;"></path></g><g transform="matrix(1,0,0,1,617.126,724.674)"><path d="M0,-695.455L-128.662,-695.455L88.481,-347.226L-127.657,0L1.005,0L217.143,-347.226L0,-695.455Z" style="fill:white;fill-rule:nonzero;"></path></g></g></svg> Hobby Next</a>
+                
+            
+        
+    
+        
+            
+                
+                    <a href="https://print-and-play.asmodee.fun/" title="Print &amp; Play" class="" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABmklEQVR4AWJwL/ChKh4CBgLKqQcQS6MwjONr22ZY2/amRW4Z17btDWvbtsJagzC2bdvzP/XcGis3p37do+/FVV5eXi2MwmJswjHsxkzUrkrAG7CMRPghQuvHaFLaw5zVLJq0hoK8xkB0Qxt0xlZk4DzmoQPa4QTe4z/c5DGGFQx4WRn7YSlaoo4eMiMXvviGdDjiM27gJiIRghE1dPG5Am5SgHVaT8NMTEGqzp6X0HovhOGdWdjiuw5m4wuGFbjcWAHTkI0v2p+OP5ip9TF4mslHOBXJWBedNV8OM46okhvaX6j901qvgZeZXEK4NlvgLjzgiY5ohvFoqjv19doBS9AcdfAB9uZgOzK12Q2RMCMBY1Vtb3RSoGGoWSDoIJxABvaazfkKMAqjEaP1+wKtpeGK1vtUVUPYI0fOorG50AqhsIx4ROGTAnTHenTT+iEGaO6KH+hb6LfMRnssUrUdcAlpmFugvdpYrWpuYa+SHy73z8F8APgFMwJhi2itPZCJDPxDx3IDKmg9rMITfMYdzCtwpt+wSDX8g80Hr+OQTOA1KMkAAAAASUVORK5CYII="> Print &amp; Play</a>
+                
+            
+        
+    
+        
+            
+                
+                    <a href="https://boardgamearena.com/" title="Board Game Arena" class="" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAjCAQAAABMMIAlAAAEaElEQVR4AZWWA3T9TBDF809tfbZt27Zt27Zt27Zt62+jtv3yXjY7vy9tit3qtDOnWc2Zzty7d1vHmTQxj60i9/IzzWhamCI3dy1pnLrhT+8wbg9Ox8O2tuDoRVlGjJ1/XXde9oLsJ5KjX9O/G61uTvK3Q4B6+Vnulwf4mVoARG76NDmKC70//PYkbx19Ku/zT+hfySUdy/bs1uV56/jbq72C/dVu6kD+AD5NrD+vt6K5Wd7a8hIaaPS3sSt0S7L15VQiAAig+VdfIo/yD1OZHH7/ZTZNwH/1+SYE0zN4F0CeWtZMWJoh95NAaJQngwODXfQJfEGChLyv9oqv2VpUk12T075UWA363DDeAkltAcAfczKMloP98IDJ/g5HulFYQ7Y8gcgTJoZyC6hjLFzDsbUIgL9nZ/Wseiusz5UvgAZ/S7MZb3Uq+ddieH88uWko74kNAOSd3QZbDg6hDuTxja3A1sWZyWRzpzpX7pSHhiaUJ4CY2tcgRV9CHIJj7cDulZisz7H3bki+NnlwlepW5cotCHG59Z0UM+GxNINcZCsic9J3yWMpJtif+fjAbH/LX43IMGF8Df4FPq/PMQE3mOyfu8bKVdvzCR0gDy4/uB9Jb0k3OIYOEvK02qZ5iakZSeOUYVWBPA0s+Cg1XNnSm56qj6cMoYNZ8qc66KqkYVUNjgM1TnLV/gD+NlZP0XCiK6/SLi/r6/Wp3SufZLY5hncsDyDXfZZsQBUNM9L5lYWJrRx3Ij43A0Cer8sf9trElmUB07pXMSiwBGZ/J6cEh8s78o18AyBfxJYb1nLIdJVM91YbX2VqNxIMWoc80FLYk9Co0F+DakrUjgZu1rWxaXk9xVvTW7W+yFtH7iQOwJzEFo5rVNi9HAvx5DKjdKthc2W72pByAGqDbQYThjrlP+DTmRmOOzEvcNXhzAPgk66V+1qemxrsQQmaNnlsNKnt5b6dNPLJFq4+Eg9Q8s4xPQm7l5Q7aJbPg8PUFrHlHXfkJrtXkpeDvWzG+8emXH4HQMU3cuanyqfE5bnGvGHata62vyNKPjY065rKkbsBQO5x1JaINKlNzSTfj/DO6AOAaaMBIucR2Y+OPA989myK8QZvI190hq1bHunWmzoKabo/YZNDGciTVi1H0yjfqi3PsVr3tyIGwREjXaqdXHmByLSDgHw/Jc141N9CgED+kDv1PvFV2wrbC+Or6WNoAOaWZw2vL7EeNUTW5lAHtPo7REdLuuoAhDFMnvguzU7Xtgwf0G//ORItJusDEmv7m8jNNFMmr1HNaKbkGbXd7LSo4V9Sgu35Bx8ikwccf0vaAYhTRxvQ6O/yS3psPbmTGbTbxRFDAGjhM7lOn6Ov5jMrxvPWd1J7/oz+hE+U9Fe1bXSz9nPblwgrPknu4gVekWfkJn2kv7U8NQYgXXJ/TiS9+qLgILlVLlK7VuSNrdz5WXw9OrqluQOPw/i9Mleeo3UkZGvzjf++JuadK8m9VNJvdfKuv9NpSdHZ//cY5cOhjALiAAAAAElFTkSuQmCC"> Board Game Arena</a>
+                
+            
+        
+    
+        
+    
+        
+            
+                
+                    <a href="https://storelocator.asmodee.com/nl/" title="Vind een winkel" class="" target="_blank"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M10 17.417l4.125-4.125a5.832 5.832 0 10-8.25 0L10 17.417zm0 2.356L4.697 14.47a7.5 7.5 0 1110.606 0L10 19.773zm0-8.94a1.666 1.666 0 100-3.332 1.666 1.666 0 000 3.332zm0 1.667a3.333 3.333 0 110-6.667 3.333 3.333 0 010 6.667z"></path></svg> Vind een winkel</a>
+                
+            
+        
+    
+    </div>
+
+    <div class="right">
+        <div class="asmodee-social">
+        
+            
+                    
+                
+                    
+                        <a href="https://www.facebook.com/nl.asmodee" title="Facebook" class="" target="_blank"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path class="social-icon-bg" d="M20 14.19C20 17.83 17.83 20 14.19 20H13C12.45 20 12 19.55 12 19V13.23C12 12.96 12.22 12.73 12.49 12.73L14.25 12.7C14.39 12.69 14.51 12.59 14.54 12.45L14.89 10.54C14.92 10.36 14.78 10.19 14.59 10.19L12.46 10.22C12.18 10.22 11.96 10 11.95 9.73001L11.91 7.28C11.91 7.12 12.04 6.98001 12.21 6.98001L14.61 6.94C14.78 6.94 14.91 6.81001 14.91 6.64001L14.87 4.23999C14.87 4.06999 14.74 3.94 14.57 3.94L11.87 3.98001C10.21 4.01001 8.89001 5.37 8.92001 7.03L8.97 9.78C8.98 10.06 8.76001 10.28 8.48001 10.29L7.28 10.31C7.11 10.31 6.98001 10.44 6.98001 10.61L7.01001 12.51C7.01001 12.68 7.14 12.81 7.31 12.81L8.51001 12.79C8.79001 12.79 9.00999 13.01 9.01999 13.28L9.10999 18.98C9.11999 19.54 8.66999 20 8.10999 20H5.81C2.17 20 0 17.83 0 14.18V5.81C0 2.17 2.17 0 5.81 0H14.19C17.83 0 20 2.17 20 5.81V14.19Z" fill="#fff"></path></svg></a>
+                    
+                
+            
+        
+            
+                    
+                
+                    
+                        <a href="https://www.instagram.com/asmodee_nl/" title="Instagram" class="" target="_blank"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><rect class="social-icon-bg" width="20" height="20" rx="6" fill="#fff"></rect><g fill="#18181B"><path d="M10 5.491C11.4685 5.491 11.6425 5.4965 12.2225 5.523C12.5712 5.52706 12.9166 5.59117 13.2435 5.7125C13.4825 5.80055 13.6987 5.94118 13.876 6.124C14.0588 6.30134 14.1994 6.5175 14.2875 6.7565C14.4088 7.08342 14.4729 7.42881 14.477 7.7775C14.5035 8.3575 14.509 8.5315 14.509 10C14.509 11.4685 14.5035 11.6425 14.477 12.2225C14.4729 12.5712 14.4088 12.9166 14.2875 13.2435C14.196 13.4807 14.0558 13.6962 13.876 13.876C13.6962 14.0558 13.4807 14.196 13.2435 14.2875C12.9166 14.4088 12.5712 14.4729 12.2225 14.477C11.6425 14.5035 11.4685 14.509 10 14.509C8.5315 14.509 8.3575 14.5035 7.7775 14.477C7.42881 14.4729 7.08342 14.4088 6.7565 14.2875C6.5175 14.1994 6.30134 14.0588 6.124 13.876C5.94118 13.6987 5.80055 13.4825 5.7125 13.2435C5.59117 12.9166 5.52706 12.5712 5.523 12.2225C5.4965 11.6425 5.491 11.4685 5.491 10C5.491 8.5315 5.4965 8.3575 5.523 7.7775C5.52706 7.42881 5.59117 7.08342 5.7125 6.7565C5.80055 6.5175 5.94118 6.30134 6.124 6.124C6.30134 5.94118 6.5175 5.80055 6.7565 5.7125C7.08342 5.59117 7.42881 5.52706 7.7775 5.523C8.3575 5.4965 8.5315 5.491 10 5.491ZM10 4.5C8.5065 4.5 8.319 4.5065 7.7325 4.533C7.27629 4.54243 6.82495 4.62881 6.3975 4.7885C6.03177 4.93009 5.6997 5.14659 5.42261 5.42412C5.14551 5.70165 4.92952 6.03405 4.7885 6.4C4.62881 6.82745 4.54243 7.27879 4.533 7.735C4.5065 8.319 4.5 8.5065 4.5 10C4.5 11.4935 4.5065 11.681 4.533 12.2675C4.54243 12.7237 4.62881 13.1751 4.7885 13.6025C4.93009 13.9682 5.14659 14.3003 5.42412 14.5774C5.70165 14.8545 6.03405 15.0705 6.4 15.2115C6.82745 15.3712 7.27879 15.4576 7.735 15.467C8.319 15.4935 8.5065 15.5 10 15.5C11.4935 15.5 11.681 15.4935 12.2675 15.467C12.7237 15.4576 13.1751 15.3712 13.6025 15.2115C13.9682 15.0699 14.3003 14.8534 14.5774 14.5759C14.8545 14.2984 15.0705 13.9659 15.2115 13.6C15.3712 13.1726 15.4576 12.7212 15.467 12.265C15.4935 11.681 15.5 11.4935 15.5 10C15.5 8.5065 15.4935 8.319 15.467 7.7325C15.4576 7.27629 15.3712 6.82495 15.2115 6.3975C15.0699 6.03177 14.8534 5.6997 14.5759 5.42261C14.2984 5.14551 13.9659 4.92952 13.6 4.7885C13.1726 4.62881 12.7212 4.54243 12.265 4.533C11.681 4.5065 11.4935 4.5 10 4.5Z"></path><path d="M10 7.18C9.44 7.18 8.9 7.34 8.43 7.65 7.97 7.96 7.6 8.4 7.39 8.92 7.18 9.44 7.12 10 7.23 10.55 7.34 11.1 7.61 11.6 8 12 8.4 12.39 8.9 12.66 9.45 12.77 10 12.88 10.57 12.82 11.08 12.61 11.6 12.4 12.04 12.03 12.35 11.57 12.66 11.1 12.82 10.56 12.82 10 12.82 9.25 12.53 8.53 12 8 11.47 7.47 10.75 7.18 10 7.18ZM10 11.83C9.64 11.83 9.28 11.73 8.98 11.52 8.68 11.32 8.45 11.04 8.31 10.7 8.17 10.37 8.13 10 8.2 9.64 8.27 9.29 8.45 8.96 8.7 8.7 8.96 8.45 9.29 8.27 9.64 8.2 10 8.13 10.37 8.17 10.7 8.31 11.04 8.44 11.32 8.68 11.52 8.98 11.73 9.28 11.83 9.64 11.83 10 11.83 10.49 11.64 10.95 11.3 11.3 10.95 11.64 10.49 11.83 10 11.83ZM12.94 7.72C13.3 7.72 13.6 7.43 13.6 7.06 13.6 6.7 13.3 6.4 12.94 6.4 12.57 6.4 12.28 6.7 12.28 7.06 12.28 7.43 12.57 7.72 12.94 7.72Z"></path></g></svg></a>
+                    
+                
+            
+        
+            
+        
+            
+        
+            
+                    
+                
+                    
+                        <a href="https://www.tiktok.com/@asmodee_nl" title="Tiktok" class="" target="_blank"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><rect class="social-icon-bg" width="20" height="20" rx="6" fill="#fff"></rect><g><path d="M9.09309 8.4685V10.5295C8.83352 10.461 8.5619 10.4517 8.29825 10.5022C8.03459 10.5527 7.78563 10.6617 7.56971 10.8212C7.35379 10.9807 7.17641 11.1866 7.05065 11.4238C6.92489 11.6609 6.85396 11.9233 6.84309 12.1915C6.82822 12.4224 6.86297 12.6539 6.945 12.8703C7.02703 13.0866 7.15445 13.283 7.31867 13.446C7.4829 13.609 7.68013 13.735 7.8971 13.8155C8.11408 13.896 8.34576 13.929 8.57659 13.9125C8.80974 13.9304 9.04401 13.8974 9.26319 13.8159C9.48237 13.7344 9.68124 13.6063 9.84607 13.4404C10.0109 13.2746 10.1377 13.0749 10.2179 12.8552C10.298 12.6355 10.3294 12.401 10.3101 12.168V4H12.3486C12.6951 6.1575 13.7741 6.658 15.2186 6.889V8.9565C14.2175 8.87441 13.2519 8.54822 12.4061 8.0065V12.09C12.4061 13.94 11.3111 16 8.59259 16C8.08257 15.9978 7.57812 15.8937 7.10883 15.694C6.63953 15.4943 6.21482 15.2029 5.8596 14.837C5.50438 14.471 5.22579 14.0378 5.04016 13.5627C4.85453 13.0877 4.7656 12.5804 4.77859 12.0705C4.79474 11.5397 4.92321 11.0183 5.15554 10.5408C5.38787 10.0632 5.71877 9.64034 6.12644 9.3C6.5341 8.95965 7.00928 8.70958 7.52063 8.56625C8.03199 8.42293 8.56792 8.38961 9.09309 8.4685Z" fill="#18181B"></path></g></svg></a>
+                    
+                
+            
+        
+            
+        
+            
+                    
+                
+                    
+                        <a href="https://www.youtube.com/@AsmodeeTheNetherlands" title="Youtube" class="" target="_blank"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18"><path class="social-icon-bg" d="M23.8 4.19961C23.8 4.19961 23.6 2.49961 22.8 1.79961C21.9 0.79961 20.9 0.799609 20.4 0.799609C17 0.599609 12 0.599609 12 0.599609C12 0.599609 7 0.599609 3.6 0.799609C3.1 0.899609 2.1 0.89961 1.2 1.79961C0.5 2.49961 0.2 4.19961 0.2 4.19961C0.2 4.19961 0 6.09961 0 8.09961V9.89961C0 11.7996 0.2 13.7996 0.2 13.7996C0.2 13.7996 0.4 15.4996 1.2 16.1996C2.1 17.1996 3.3 17.0996 3.8 17.1996C5.7 17.3996 12 17.3996 12 17.3996C12 17.3996 17 17.3996 20.4 17.0996C20.9 16.9996 21.9 16.9996 22.8 16.0996C23.5 15.3996 23.8 13.6996 23.8 13.6996C23.8 13.6996 24 11.7996 24 9.79961V7.99961C24 6.09961 23.8 4.19961 23.8 4.19961ZM9.5 12.0996V5.39961L16 8.79961L9.5 12.0996Z" fill="#fff"></path></svg></a>
+                    
+                
+            
+        
+        </div>
+        
+        
+        <div class="asmodee-login">
+            
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect width="24" height="24" rx="12" fill="#fff"></rect><path d="M12 5.33C10.25 5.33 8.83 6.75 8.83 8.5 8.83 10.21 10.17 11.6 11.92 11.66 11.97 11.65 12.03 11.65 12.07 11.66 12.08 11.66 12.09 11.66 12.1 11.66 12.11 11.66 12.11 11.66 12.11 11.66 13.82 11.6 15.16 10.21 15.17 8.5 15.17 6.75 13.75 5.33 12 5.33ZM15.39 13.43C13.53 12.19 10.49 12.19 8.62 13.43 7.77 14 7.31 14.77 7.31 15.59 7.31 16.41 7.77 17.17 8.61 17.73 9.55 18.35 10.77 18.67 12 18.67 13.23 18.67 14.45 18.35 15.39 17.73 16.23 17.16 16.69 16.4 16.69 15.57 16.69 14.75 16.23 13.99 15.39 13.43Z" fill="#18181B"></path></svg>
+                <span>Log in op mijn My asmodee-account</span>
+            
+        </div>
+        
+    </div>
+</div>
+</div>
+            <div class="header__nav lg:h-[100px] !items-stretch px-5 lg:px-10">
+                <div class="header__left py-2 lg:py-4">
+                    <button type="button" class="menu__burger-btn">
+                              <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 5H21M3 12H21M3 19H21" stroke="#18181B" stroke-width="2" stroke-linecap="round"></path></svg>
+                        </button>
+                    
+<a href="https://www.asmodee.nl" title="Asmodee" class="logo">
+    <img class="" src="https://www.asmodee.nl/wp-content/themes/unboxnow-du/ui/build/img/logo-asmodee.svg" alt="Asmodee">
+</a>                </div>
+                <div class="header__menu lg:h-full menu">
+                    <div class="menu__nav lg:h-full">
+                        <button class="menu__close">
+                            <svg width="24" height="24" fill="transparent" viewBox="0 0 24 24">
+        <path d="M18 6L6 18" stroke="#B0B0B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M6 6L18 18" stroke="#B0B0B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>                        </button>
+                        <div class="menu__list-wrapper lg:h-full">
+                            <ul class="menu__list lg:h-full"><li class="menu__item"><a href="https://www.asmodee.nl/product/" class="menu__link">
+Alle spellen</a></li>
+<li class="menu__item menu__item--withSubItems  "><a href="#" class="menu__link">Categorieën<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 7"><path d="M1 1.5L5 5.5L9 1.5" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+	<div class="menu__sublist-wrapper">
+	<ul class="menu__sublist"><li class="menu__head-subitem">
+Thema</li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/benefit/action/" class="menu__sublink">
+Behendigheid</a></li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/benefit/creativity/" class="menu__sublink">
+Creatief</a></li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/benefit/education/" class="menu__sublink">
+Educatief</a></li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/benefit/memory/" class="menu__sublink">
+Hersenkrakers</a></li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/benefit/strategy/" class="menu__sublink">
+Strategisch</a></li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/benefit/teamwork/" class="menu__sublink">
+Samenwerken</a></li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/benefit/party/" class="menu__sublink">
+Party</a></li>
+</ul>
+	<ul class="menu__sublist"><li class="menu__head-subitem">
+Geschikt voor</li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/public/2-players/" class="menu__sublink">
+2 spelers</a></li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/public/kids/" class="menu__sublink">
+Kinderen</a></li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/public/familie-en-vrienden/" class="menu__sublink">
+Familie &amp; vrienden</a></li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/public/grote-groepen/" class="menu__sublink">
+Grote groepen</a></li>
+</ul>
+	<ul class="menu__sublist"><li class="menu__head-subitem">
+Leeftijd</li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/age-range/3-tm-7-jaar/" class="menu__sublink">
+3 t/m 7 jaar</a></li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/age-range/8-t-m-14-jaar/" class="menu__sublink">
+8 t/m 14 jaar</a></li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/age-range/15-jaar-en-ouder/" class="menu__sublink">
+15 jaar en ouder</a></li>
+</ul>
+	<ul class="menu__sublist"><li class="menu__head-subitem">
+Aantal spelers</li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/player-range/2-spelers/" class="menu__sublink">
+2 spelers</a></li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/player-range/3-4-spelers/" class="menu__sublink">
+3-4 spelers</a></li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/player-range/4-6-spelers/" class="menu__sublink">
+4-6 spelers</a></li>
+	<li class="menu__subitem"><a href="https://www.asmodee.nl/player-range/7-spelers/" class="menu__sublink">
+7+ spelers</a></li>
+</ul>
+</div>
+</li><li class="menu__item"><a href="https://www.asmodee.nl/articles/" class="menu__link">
+Nieuws</a></li>
+</ul>                            <div class="sso-navbar-mobile"><div id="widget-asmodee-topbar-mobile"><div class="asmodee-nav-mobile has-back asmodee-new-design">
+    <ul class="asmodee-websites">
+    
+        
+            
+            <li>
+                
+                    <a href="/" title="Home" class="accueil" target=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAUCAMAAAC+oj0CAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAVZQTFRFAAAAAAAAzc3N5OTkv7+/8fHx8/Pzy8vL+vr6/////////f39fn5++/v7/////////f39+fn5/////////v7++vr6/////Pz8ra2t/Pz8/////v7+/v7+////////////7e3t/v7+////+fn5/Pz8/f39/////f397u7u/v7+/////////f39+/v7/f39+vr6+/v7/////v7+/v7+/f39/////////v7+/Pz8/v7+/f39uLi4/Pz8////+vr6/v7+////+vr6/v7+/////v7+6enp2dnZ/v7+////9/f3/v7+/////v7+////+Pj43t7e/f399fX1////+Pj4+/v7+Pj4AgIC6urq////////+Pj48/Pz+vr6/v7++/v7+Pj4/////v7+/f39/v7+/f398fHx/////v7+////+/v7FxcX9vb2+fn5+fn58PDw29vb+Pj4xsbGkhM3jQAAAHJ0Uk5TAgEFCQQQEgUx4PleAj76/1Y44fN0Rf5aBmPxqYL1+8UOnfgnPU/qWhav/fRtPGk+OMDbXFvs/I1AtmUENswpfK0mmvdqCwZ7txym04a7HgtjILMsSCcCE9HlMxMnfTMSn2AyoGARz5vvMQEYJCMPBx8EqFNCmwAAAPRJREFUeJxjYCAJMMIBEzMjIwsrGzuIjRDm4OTi5uHl4xcAC8OAoBA/v7CIqBi/OJJREpJS/NIysnLyMGGwAQqKSnwyyiqqavz8/OpwQzQ0tbR1dDmF9fQ5+fm5YaoNDPmNjE1M+fnNzC0s+TmtwC6xthHWsrWzN+MHAQdHJ2d+F1egsJs7v4enlyxYlN/M285HztcPZLZ/QGAQPxwIBYeEhkGcFx4B5HNFRgoDKakouAOjQcJBMTGxIOE4uOfjQcIJjIyJIOEkuDBYdTIjYwqq6tQ0ID+dkdEYSGVkwoWzsnNyc/MYGfNzc3MKClFCEGc0IAMAJeckg1yMkokAAAAASUVORK5CYII="> Home</a>
+                
+            </li>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+            <li>
+                
+                    <a href="https://www.hobbynext.nl/" title="Hobby Next" class="" target="_blank"><svg width="20" height="20" viewBox="0 0 870 755" version="1.1" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="Layer-1" serif:id="Layer 1"><g transform="matrix(1,0,0,1,567.352,237.621)"><path d="M0,278.691L86.362,139.953L86.362,139.71L0,1.214L-127.814,-203.736L-127.814,47.885L-323.176,47.885L-323.176,-207.621L-537.353,-207.621L-537.353,486.312L-323.176,486.312L-323.176,221.642L-127.814,221.642L-127.814,483.946L0,278.691Z" style="fill:white;fill-rule:nonzero;"></path></g><g transform="matrix(1,0,0,1,617.126,724.674)"><path d="M0,-695.455L-128.662,-695.455L88.481,-347.226L-127.657,0L1.005,0L217.143,-347.226L0,-695.455Z" style="fill:white;fill-rule:nonzero;"></path></g></g></svg> Hobby Next</a>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li>
+                
+                    <a href="https://print-and-play.asmodee.fun/" title="Print &amp; Play" class="" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABmklEQVR4AWJwL/ChKh4CBgLKqQcQS6MwjONr22ZY2/amRW4Z17btDWvbtsJagzC2bdvzP/XcGis3p37do+/FVV5eXi2MwmJswjHsxkzUrkrAG7CMRPghQuvHaFLaw5zVLJq0hoK8xkB0Qxt0xlZk4DzmoQPa4QTe4z/c5DGGFQx4WRn7YSlaoo4eMiMXvviGdDjiM27gJiIRghE1dPG5Am5SgHVaT8NMTEGqzp6X0HovhOGdWdjiuw5m4wuGFbjcWAHTkI0v2p+OP5ip9TF4mslHOBXJWBedNV8OM46okhvaX6j901qvgZeZXEK4NlvgLjzgiY5ohvFoqjv19doBS9AcdfAB9uZgOzK12Q2RMCMBY1Vtb3RSoGGoWSDoIJxABvaazfkKMAqjEaP1+wKtpeGK1vtUVUPYI0fOorG50AqhsIx4ROGTAnTHenTT+iEGaO6KH+hb6LfMRnssUrUdcAlpmFugvdpYrWpuYa+SHy73z8F8APgFMwJhi2itPZCJDPxDx3IDKmg9rMITfMYdzCtwpt+wSDX8g80Hr+OQTOA1KMkAAAAASUVORK5CYII="> Print &amp; Play</a>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li>
+                
+                    <a href="https://boardgamearena.com/" title="Board Game Arena" class="" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAjCAQAAABMMIAlAAAEaElEQVR4AZWWA3T9TBDF809tfbZt27Zt27Zt27Zt62+jtv3yXjY7vy9tit3qtDOnWc2Zzty7d1vHmTQxj60i9/IzzWhamCI3dy1pnLrhT+8wbg9Ox8O2tuDoRVlGjJ1/XXde9oLsJ5KjX9O/G61uTvK3Q4B6+Vnulwf4mVoARG76NDmKC70//PYkbx19Ku/zT+hfySUdy/bs1uV56/jbq72C/dVu6kD+AD5NrD+vt6K5Wd7a8hIaaPS3sSt0S7L15VQiAAig+VdfIo/yD1OZHH7/ZTZNwH/1+SYE0zN4F0CeWtZMWJoh95NAaJQngwODXfQJfEGChLyv9oqv2VpUk12T075UWA363DDeAkltAcAfczKMloP98IDJ/g5HulFYQ7Y8gcgTJoZyC6hjLFzDsbUIgL9nZ/Wseiusz5UvgAZ/S7MZb3Uq+ddieH88uWko74kNAOSd3QZbDg6hDuTxja3A1sWZyWRzpzpX7pSHhiaUJ4CY2tcgRV9CHIJj7cDulZisz7H3bki+NnlwlepW5cotCHG59Z0UM+GxNINcZCsic9J3yWMpJtif+fjAbH/LX43IMGF8Df4FPq/PMQE3mOyfu8bKVdvzCR0gDy4/uB9Jb0k3OIYOEvK02qZ5iakZSeOUYVWBPA0s+Cg1XNnSm56qj6cMoYNZ8qc66KqkYVUNjgM1TnLV/gD+NlZP0XCiK6/SLi/r6/Wp3SufZLY5hncsDyDXfZZsQBUNM9L5lYWJrRx3Ij43A0Cer8sf9trElmUB07pXMSiwBGZ/J6cEh8s78o18AyBfxJYb1nLIdJVM91YbX2VqNxIMWoc80FLYk9Co0F+DakrUjgZu1rWxaXk9xVvTW7W+yFtH7iQOwJzEFo5rVNi9HAvx5DKjdKthc2W72pByAGqDbQYThjrlP+DTmRmOOzEvcNXhzAPgk66V+1qemxrsQQmaNnlsNKnt5b6dNPLJFq4+Eg9Q8s4xPQm7l5Q7aJbPg8PUFrHlHXfkJrtXkpeDvWzG+8emXH4HQMU3cuanyqfE5bnGvGHata62vyNKPjY065rKkbsBQO5x1JaINKlNzSTfj/DO6AOAaaMBIucR2Y+OPA989myK8QZvI190hq1bHunWmzoKabo/YZNDGciTVi1H0yjfqi3PsVr3tyIGwREjXaqdXHmByLSDgHw/Jc141N9CgED+kDv1PvFV2wrbC+Or6WNoAOaWZw2vL7EeNUTW5lAHtPo7REdLuuoAhDFMnvguzU7Xtgwf0G//ORItJusDEmv7m8jNNFMmr1HNaKbkGbXd7LSo4V9Sgu35Bx8ikwccf0vaAYhTRxvQ6O/yS3psPbmTGbTbxRFDAGjhM7lOn6Ov5jMrxvPWd1J7/oz+hE+U9Fe1bXSz9nPblwgrPknu4gVekWfkJn2kv7U8NQYgXXJ/TiS9+qLgILlVLlK7VuSNrdz5WXw9OrqluQOPw/i9Mleeo3UkZGvzjf++JuadK8m9VNJvdfKuv9NpSdHZ//cY5cOhjALiAAAAAElFTkSuQmCC"> Board Game Arena</a>
+                
+            </li>
+            
+        
+    
+        
+    
+        
+            
+            <li>
+                
+                    <a href="https://storelocator.asmodee.com/nl/" title="Vind een winkel" class="" target="_blank"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M10 17.417l4.125-4.125a5.832 5.832 0 10-8.25 0L10 17.417zm0 2.356L4.697 14.47a7.5 7.5 0 1110.606 0L10 19.773zm0-8.94a1.666 1.666 0 100-3.332 1.666 1.666 0 000 3.332zm0 1.667a3.333 3.333 0 110-6.667 3.333 3.333 0 010 6.667z"></path></svg> Vind een winkel</a>
+                
+            </li>
+            
+        
+    
+    
+    </ul>
+
+    <div>
+         
+        <div class="asmodee-account asmodee-login">
+            
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect width="24" height="24" rx="12" fill="#fff"></rect><path d="M12 5.33C10.25 5.33 8.83 6.75 8.83 8.5 8.83 10.21 10.17 11.6 11.92 11.66 11.97 11.65 12.03 11.65 12.07 11.66 12.08 11.66 12.09 11.66 12.1 11.66 12.11 11.66 12.11 11.66 12.11 11.66 13.82 11.6 15.16 10.21 15.17 8.5 15.17 6.75 13.75 5.33 12 5.33ZM15.39 13.43C13.53 12.19 10.49 12.19 8.62 13.43 7.77 14 7.31 14.77 7.31 15.59 7.31 16.41 7.77 17.17 8.61 17.73 9.55 18.35 10.77 18.67 12 18.67 13.23 18.67 14.45 18.35 15.39 17.73 16.23 17.16 16.69 16.4 16.69 15.57 16.69 14.75 16.23 13.99 15.39 13.43Z" fill="#18181B"></path></svg>
+                Log in op mijn My asmodee-account
+            
+        </div>
+        
+    </div>
+</div>
+</div></div>
+                        </div>
+
+                        <!--div class="menu__cta-wrapper show-mobile">
+                            <a class="menu__cta" href="" title="" data-event="findGame">Find your next game</a>
+                        </div-->
+                    </div>
+                    <form class="header__form header-form" method="get" action="https://www.asmodee.nl/">
+                        <button type="button" class="header-form__btn-open">
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 19"><path d="M17 17.5L15.4 15.9M16.2 9.1C16.2 13.2974 12.7974 16.7 8.6 16.7C4.40264 16.7 1 13.2974 1 9.1C1 4.90264 4.40264 1.5 8.6 1.5C12.7974 1.5 16.2 4.90264 16.2 9.1Z" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>                        </button>
+                        <!--div class="show-desktop">
+                            <a class="menu__cta" href="" title="" data-event="findGame">Find your next game</a>
+                        </div-->
+                        <div class="header-form__content">
+                            <input class="header-form__input" type="text" placeholder="Zoeken" name="s" id="s" autocomplete="off">
+                            <button type="submit" class="header-form__btn-submit">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 19"><path d="M17 17.5L15.4 15.9M16.2 9.1C16.2 13.2974 12.7974 16.7 8.6 16.7C4.40264 16.7 1 13.2974 1 9.1C1 4.90264 4.40264 1.5 8.6 1.5C12.7974 1.5 16.2 4.90264 16.2 9.1Z" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+<div class="container">
+<article class="article">
+		
+
+<div class="article__body">
+    <h1 class="text-center text-h2-mobile md:text-h1-mobile py-12"></h1>
+  <div class="mt-8 mb-16 article__body--gutenberg">
+    <div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img decoding="async" src="https://cdn.svc.asmodee.net/production-asmodeenl/uploads/image-converter/2025/06/OrangeLeague-1024x541.webp" alt="" class="wp-image-6222" style="width:594px;height:auto"></figure></div>
+
+
+<p>Altijd ervan gedroomd om een <strong>Pokémon Master</strong> te worden door Gym Badges te verzamelen en een daadwerkelijke <strong>Champion </strong>te worden? Dat kan met de <strong>Orange League</strong>, waarbij je met de Pokémon TCG verschillende winkels kunt bezoeken om te spelen en fysieke badges kunt winnen! </p>
+
+
+
+<p>Of je nu het spel eindelijk wil gaan leren, of al een doorgewinterde veteraan bent, de Orange League biedt je een ervaring zoals je nooit eerder hebt beleefd! Check bij welke winkels je terecht kan en verzamel je eerste <strong>8 badges</strong>!</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-large"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F06%2Fpokemon2-1024x683.jpg&amp;attachment_id=6217" alt="" class="wp-image-6217"></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-large"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F06%2Fpokemon1-1024x683.jpg&amp;attachment_id=6218" alt="" class="wp-image-6218"></figure>
+</div>
+</div>
+
+
+
+<h2 class="wp-block-heading" id="h-wat-is-de-orange-league"><strong>Wat is de Orange League?</strong></h2>
+
+
+
+<p></p>
+
+
+
+<p>• &nbsp; &nbsp; Een toegankelijk Pokémon-evenement voor spelers van alle leeftijden<br>• &nbsp; &nbsp; Spelers verzamelen badges (net als in de Pokémon-games) door DRIE laagdrempelige<br>&nbsp; &nbsp; &nbsp; potjes te spelen tegen verschillende tegenstanders<br>• &nbsp; &nbsp; Iedere badge vertegenwoordigt een winkel en eventueel thema die ze willen overbrengen<br>• &nbsp; &nbsp; Spelers hoeven niet te winnen – de nadruk ligt op meedoen, plezier en leren!<br>• &nbsp; &nbsp; Je hoeft geen officiële toernooi-speler te zijn; het is ook geschikt voor casual spelers of beginners<br>• &nbsp; &nbsp; Spelers kunnen badges verzamelen bij 29 verschillende deelnemende winkels<br>• &nbsp; &nbsp; Aan het eind is er een finale of een speciaal event (met als richtdatum 28-02-2026) voor iedereen die <br>  &nbsp; &nbsp;  &nbsp; MINSTENS 8 badges verzameld heeft: meer info hierover volgt.<br>• &nbsp; &nbsp; Het verzamelen van badges kan vanaf 25-06-2025 t/m 01-02-2026</p>
+
+
+
+<p></p>
+
+
+
+<p>Je speelt in een toegankelijk format met aangepaste regels; de zogeheten ‘<strong>Showcase Format</strong>‘. <br>De Showcase Format wordt gespeeld met:<br>• &nbsp; &nbsp; Een half-deck, dus 30 kaarten (en 3 prize cards in plaats van 6).<br>• &nbsp; &nbsp; Single type Pokémon in je deck (dus bijvoorbeeld allemaal Grass of allemaal Fire).<br>• &nbsp; &nbsp; Enige uitzondering is Eevee, die als colorless begint.<br>• &nbsp; &nbsp; Één enkele ex-kaart toegestaan in het deck (dat is je ‘showcase’ kaart).<br>• &nbsp; &nbsp; Maximaal 2 van elke kaart in je deck (behalve natuurlijk Energy).<br>• &nbsp; &nbsp; Geen kaarten ouder dan SV1.<br>• &nbsp; &nbsp; Geen Special Energy is toegestaan.<br>• &nbsp; &nbsp; ACE-SPEC kaarten zijn wel toegestaan.<br>• &nbsp; &nbsp; Kaarten die bijvoorbeeld roepen dat Special Energy kan worden getrokken zijn echter nutteloos.</p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<h3 class="wp-block-heading" id="h-check-de-deelnemende-winkels-hieronder-en-meld-je-aan">Check de deelnemende winkels hieronder en meld je aan!</h3>
+
+
+
+<p></p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague01.png&amp;attachment_id=6310" alt="" class="wp-image-6310" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://www.speedytoys.nl/the-orange-league-is-terug/" target="_blank" rel="noreferrer noopener">Speedytoys</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague04.png&amp;attachment_id=6313" alt="" class="wp-image-6313" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://www.moxspellen.nl/webshop/agenda/pokemon-the-orange-league/" target="_blank" rel="noreferrer noopener">Mox Spellen</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague07.png&amp;attachment_id=6317" alt="" class="wp-image-6317" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://www.despellenhoorn.nl/events/categories/pokemon/" target="_blank" rel="noreferrer noopener">De Spellenhoorn</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague10.png&amp;attachment_id=6320" alt="" class="wp-image-6320" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://www.purperendraak.nl/evenementen/" target="_blank" rel="noreferrer noopener">Purperen Draak</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague13.png&amp;attachment_id=6323" alt="" class="wp-image-6323" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://mojocards.nl/pages/doe-mee-aan-de-orange-league-bij-mojo-cards-enschede" target="_blank" rel="noreferrer noopener">Mojocards / Pan&amp;Tung V.O.F.</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague16.png&amp;attachment_id=6326" alt="" class="wp-image-6326" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://spelenmeer.nl/tradingcardgames-pokemon/" target="_blank" rel="noreferrer noopener">Spel en Meer</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague19.png&amp;attachment_id=6329" alt="" class="wp-image-6329" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://welpietoys.nl/p/orange-league/" target="_blank" rel="noreferrer noopener">Welpie Toys</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague22.png&amp;attachment_id=6332" alt="" class="wp-image-6332" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://www.organizedplay.nl/html/NL/toernooiagenda_TCG.html">De </a><a href="https://www.organizedplay.nl/html/NL/toernooiagenda_TCG.html" target="_blank" rel="noreferrer noopener">Tafelridder</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague25.png&amp;attachment_id=6335" alt="" class="wp-image-6335" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://www.bazaarofmagic.eu/nl-NL/events?game=7" target="_blank" rel="noreferrer noopener">Bazaar of Magic</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague28.png&amp;attachment_id=6338" alt="" class="wp-image-6338" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://www.facebook.com/pokemonleaguetwente.dedondersteen" target="_blank" rel="noreferrer noopener">De Dondersteen</a></figcaption></figure></div></div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague02.png&amp;attachment_id=6311" alt="" class="wp-image-6311" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://poke-maat.nl/orange-league-2025/" target="_blank" rel="noreferrer noopener">Poke-Maat</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague05.png&amp;attachment_id=6314" alt="" class="wp-image-6314" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://amsterdam-toys.com/events/" target="_blank" rel="noreferrer noopener">Amsterdam Toys</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague08.png&amp;attachment_id=6318" alt="" class="wp-image-6318" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://www.douze.nu/pagina/orange-league" target="_blank" rel="noreferrer noopener">Douze No12</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague11.png&amp;attachment_id=6321" alt="" class="wp-image-6321" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://www.spellenspeciaalzaak013.nl/evenementen/" target="_blank" rel="noreferrer noopener">Labyrinth Tilburg</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague14.png&amp;attachment_id=6324" alt="" class="wp-image-6324" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://daansshop.com/" target="_blank" rel="noreferrer noopener">Daans Shop</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague17.png&amp;attachment_id=6327" alt="" class="wp-image-6327" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://urbancardhouse.nl/pages/pokemon-orange-league" target="_blank" rel="noreferrer noopener">Urban Cardhouse</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague20.png&amp;attachment_id=6330" alt="" class="wp-image-6330" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://www.playourgames.nl/" target="_blank" rel="noreferrer noopener">Playourgames</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague23.png&amp;attachment_id=6333" alt="" class="wp-image-6333" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://uniquebrickstore.com/" target="_blank" rel="noreferrer noopener">Unique Brickstore</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague26.png&amp;attachment_id=6336" alt="" class="wp-image-6336" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://side7.nl/?cnSelected=603e733f-bfb5-4528-9f62-1f2a9a773c0c-recurring-1" target="_blank" rel="noreferrer noopener">Side7</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague29.png&amp;attachment_id=6339" alt="" class="wp-image-6339" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://www.collectorstore.nl/product-categorie/orange-league/" target="_blank" rel="noreferrer noopener">Collector Store</a></figcaption></figure></div></div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague03.png&amp;attachment_id=6312" alt="" class="wp-image-6312" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://hetbeeldverhaal.nl/product-categorie/all-trading-card-games/orange-league-pokemon/" target="_blank" rel="noreferrer noopener">Het Beeldverhaal</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague06.png&amp;attachment_id=6315" alt="" class="wp-image-6315" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://halte13.nl/" target="_blank" rel="noreferrer noopener">Halte 13</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague09.png&amp;attachment_id=6319" alt="" class="wp-image-6319" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://www.tcgcenter.nl/nl/content/25-pokemon-orange-league" target="_blank" rel="noreferrer noopener">Trading Card Games Center</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague12.png&amp;attachment_id=6322" alt="" class="wp-image-6322" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://arlytrading.nl/the-orange-league-arlytoys-tcg/" target="_blank" rel="noreferrer noopener">ArlyToys Speelgoed en TCG</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague15.png&amp;attachment_id=6325" alt="" class="wp-image-6325" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://deschildknaap.nl/evenementen/orange-league/">De </a><a href="https://deschildknaap.nl/evenementen/orange-league/" target="_blank" rel="noreferrer noopener">Schildknaap</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague18.png&amp;attachment_id=6328" alt="" class="wp-image-6328" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://www.gamerzparadize.nl/nl/events/pokemon-orange-league/" target="_blank" rel="noreferrer noopener">GamerzParadize</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague21.png&amp;attachment_id=6331" alt="" class="wp-image-6331" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://www.titangames.nl/agenda-item/titan-games-orange-league/" target="_blank" rel="noreferrer noopener">Titan Games</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague24.png&amp;attachment_id=6334" alt="" class="wp-image-6334" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://tabletopkingdom.nl/event/?category=140&amp;location=" target="_blank" rel="noreferrer noopener">Tabletop Kingdom</a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="https://www.asmodee.nl/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague27.png&amp;attachment_id=6337" alt="" class="wp-image-6337" style="width:270px;height:auto"><figcaption class="wp-element-caption"><a href="https://www.tcg-cards.nl/" target="_blank" rel="noreferrer noopener">TCG Cards</a></figcaption></figure></div></div>
+</div>
+
+
+
+<p></p><figure class="wp-block-image size-full"></figure> <p></p>
+  </div>
+</div>
+</article>
+</div>
+
+
+    <div class="relative">
+        <div class="container relative">
+                        <img class="absolute left-1/2 -translate-x-1/2 md:translate-x-0 md:left-36 w-48 top-0 -translate-y-1/3 z-40" src="https://www.asmodee.nl/wp-content/themes/unboxnow-du/ui/build/img/logo-asmodee.svg" alt="Asmodee">
+        </div>
+
+        <div class="bg-gradient-brand h-7"></div>
+
+            <section class="asmodee-newsletter">
+        <div class="asmodee-newsletter__container">
+            <div class="column">
+                <h5 class="asmodee-newsletter__title">
+                    Wil je nog meer spelnieuws ontvangen?                </h5>
+                <p>
+                    Schrijf je in op onze nieuwsbrief:                </p>
+            </div>
+            <div class="column">
+                
+    <form>
+        <input id="asmodee-newsletter-email" class="btn" type="email" placeholder="Je emailadres">
+        <button class="newsletter-subscribe btn btn--full-m btn--black" type="submit" value="email">
+            Abonneren
+        </button>
+        <div class="asmodee-newsletter-response"></div>
+        <span class="newsletter-skip modal__close">
+            Skip
+        </span>
+    </form>                
+    <div class="mentions">
+                    <p>
+                        Ik ga akkoord met het ontvangen van informatie over aanbiedingen, diensten, spellen en evenementen via e-mail en via sociale netwerken van ‘Financière Amuse BidCo’ en de vernoemde bedrijven van de Asmodee Group <a href="https://corporate.asmodee.com/companies" target="_blank">hier</a>
+                    </p>
+                    <p>
+                        U kan zich op elk moment afmelden. 
+                    </p>
+                    <p>
+                        <a href="https://account.asmodee.net/nl/legal/privacy" target="_blank">
+                            Voor meer informatie over hoe wij uw gegevens verwerken, verwijzen wij u naar ons Privacybeleid. 
+                        </a>
+                    </p>
+            </div>
+                </div>
+        </div>
+    </section>
+
+    </div>
+</main>
+
+<footer class="footer relative bg-neutral-900">
+    <div class="absolute top-0 left-1/2 w-full -translate-y-2/3 -translate-x-1/2 [&amp;&gt;svg]:-translate-x-[2.5%] [&amp;&gt;svg]:w-[105%] [&amp;&gt;svg]:min-w-[600px] text-neutral-900 bg-neutral overflow-hidden">
+        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 56"><g clip-path="url(#clip0_864_257)"><path d="M2598.9 160.516L2495.49 137.404L2405.16 152.415L2314.84 174.956L2224.52 155.266L2134.2 141.254L2043.88 161.096L1953.55 172.48L1863.23 143.22L1772.92 177.431L1682.59 154.515L1592.27 165.436L1501.95 162.368L1411.63 174.726L1321.31 126.566L1230.99 172.219L1140.67 141.54L1050.34 145.683L960.024 163.253L869.699 127.661L779.373 152.804L689.054 137.372L598.729 153.905L508.403 173.81L418.084 133.586L327.759 166.454L237.44 127.139L147.114 128.456L56.7888 170.889L-33.5366 158.003L-123.862 131.836L-222.925 157.417L-202.039 32.5756L-123.875 2.94007L-33.5494 15.1646L56.7697 24.7483L147.095 20.4273L237.414 37.6219L327.74 19.5554L418.059 10.4683L508.384 6.21092L598.697 21.7383L689.022 0.910112L779.342 24.2901L869.661 7.01274L959.98 22.1646L1050.31 30.5773L1140.62 20.3891L1230.95 33.6128L1321.27 15.8838L1411.59 12.5554L1501.91 34.6818L1592.24 0L1682.56 3.48105L1772.88 22.6865L1863.21 37.9847L1953.53 49.0318L2043.85 33.9883L2134.18 2.8509L2224.5 25.0155L2314.82 42.5856L2405.15 44.641L2495.48 8.61639L2590.17 20.6438L2598.9 160.516Z" fill="currentColor"></path></g><defs><clipPath id="clip0_864_257"><path fill="#fff" transform="translate(-212)" d="M0 0H2800V56H0z"></path></clipPath></defs></svg>    </div>
+    <div class="container mt-[2vw]">
+        <nav class="footer__nav py-12 text-white">
+            <div class="footer_items flex flex-col lg:flex-row items-center lg:items-start justify-between gap-10">
+                <li id="menu-item-2776" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2776"><a href="#">Links</a>
+<ul class="sub-menu">
+	<li id="menu-item-2777" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2777"><a href="https://www.asmodee.nl/print-play/">Print &amp; Play</a></li>
+	<li id="menu-item-3003" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3003"><a href="https://www.asmodee.nl/homepage/spelen-is-leren/">Spelen is Leren!</a></li>
+</ul>
+</li>
+<li id="menu-item-6195" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6194 current_page_item menu-item-6195"><a href="https://www.asmodee.nl/orange-league/" aria-current="page">Orange League</a></li>
+<li id="menu-item-6405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6405"><a href="https://www.asmodee.nl/socials/">Social Media Asmodee</a></li>
+
+                                                    <div class="order-first lg:order-last">
+                        <span class="footer__item--title text-center lg:text-left">Volg ons op</span>
+                        <ul class="list-social flex flex-wrap justify-center lg:justify-end gap-2">
+                                                                                                                        <li class="list-social__item  ">
+                                    <a href="https://www.instagram.com/asmodee_nl/" class="list-social__link" target="_blank" rel="nofollow noopener noreferrer" aria-label="Instagram">
+                                              <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.982C14.937 2.982 15.285 2.993 16.445 3.046C17.1424 3.05412 17.8332 3.18233 18.487 3.425C18.965 3.60111 19.3973 3.88237 19.752 4.248C20.1176 4.60269 20.3989 5.035 20.575 5.513C20.8177 6.16685 20.9459 6.85762 20.954 7.555C21.007 8.715 21.018 9.063 21.018 12C21.018 14.937 21.007 15.285 20.954 16.445C20.9459 17.1424 20.8177 17.8332 20.575 18.487C20.3919 18.9615 20.1116 19.3924 19.752 19.752C19.3924 20.1116 18.9615 20.3919 18.487 20.575C17.8332 20.8177 17.1424 20.9459 16.445 20.954C15.285 21.007 14.937 21.018 12 21.018C9.063 21.018 8.715 21.007 7.555 20.954C6.85762 20.9459 6.16685 20.8177 5.513 20.575C5.035 20.3989 4.60269 20.1176 4.248 19.752C3.88237 19.3973 3.60111 18.965 3.425 18.487C3.18233 17.8332 3.05412 17.1424 3.046 16.445C2.993 15.285 2.982 14.937 2.982 12C2.982 9.063 2.993 8.715 3.046 7.555C3.05412 6.85762 3.18233 6.16685 3.425 5.513C3.60111 5.035 3.88237 4.60269 4.248 4.248C4.60269 3.88237 5.035 3.60111 5.513 3.425C6.16685 3.18233 6.85762 3.05412 7.555 3.046C8.715 2.993 9.063 2.982 12 2.982ZM12 1C9.013 1 8.638 1.013 7.465 1.066C6.55258 1.08486 5.6499 1.25762 4.795 1.577C4.06355 1.86017 3.3994 2.29319 2.84521 2.84824C2.29102 3.40329 1.85904 4.06811 1.577 4.8C1.25762 5.6549 1.08486 6.55758 1.066 7.47C1.013 8.638 1 9.013 1 12C1 14.987 1.013 15.362 1.066 16.535C1.08486 17.4474 1.25762 18.3501 1.577 19.205C1.86017 19.9365 2.29319 20.6006 2.84824 21.1548C3.40329 21.709 4.06811 22.141 4.8 22.423C5.6549 22.7424 6.55758 22.9151 7.47 22.934C8.638 22.987 9.013 23 12 23C14.987 23 15.362 22.987 16.535 22.934C17.4474 22.9151 18.3501 22.7424 19.205 22.423C19.9365 22.1398 20.6006 21.7068 21.1548 21.1518C21.709 20.5967 22.141 19.9319 22.423 19.2C22.7424 18.3451 22.9151 17.4424 22.934 16.53C22.987 15.362 23 14.987 23 12C23 9.013 22.987 8.638 22.934 7.465C22.9151 6.55258 22.7424 5.6499 22.423 4.795C22.1398 4.06355 21.7068 3.3994 21.1518 2.84521C20.5967 2.29102 19.9319 1.85904 19.2 1.577C18.3451 1.25762 17.4424 1.08486 16.53 1.066C15.362 1.013 14.987 1 12 1Z" fill="#18181B"></path><path d="M12 6.35C10.88 6.35 9.79 6.68 8.86 7.3 7.93 7.92 7.21 8.81 6.78 9.84 6.35 10.87 6.24 12.01 6.46 13.1 6.68 14.2 7.22 15.2 8.01 15.99 8.8 16.78 9.8 17.32 10.9 17.54 11.99 17.76 13.13 17.65 14.16 17.22 15.19 16.79 16.08 16.07 16.7 15.14 17.32 14.21 17.65 13.12 17.65 12 17.65 10.5 17.05 9.06 16 8.01 14.94 6.95 13.5 6.35 12 6.35ZM12 15.67C11.28 15.67 10.57 15.45 9.96 15.05 9.36 14.65 8.89 14.07 8.61 13.4 8.34 12.73 8.26 12 8.4 11.28 8.55 10.57 8.89 9.92 9.41 9.41 9.92 8.89 10.57 8.54 11.29 8.4 12 8.26 12.73 8.33 13.4 8.61 14.07 8.89 14.65 9.36 15.05 9.96 15.45 10.57 15.67 11.27 15.67 12 15.67 12.97 15.28 13.9 14.59 14.59 13.91 15.28 12.97 15.67 12 15.67ZM17.87 7.45C18.6 7.45 19.19 6.86 19.19 6.13 19.19 5.4 18.6 4.81 17.87 4.81 17.14 4.81 16.55 5.4 16.55 6.13 16.55 6.86 17.14 7.45 17.87 7.45Z" fill="#fff"></path></svg>
+                                        </a>
+                                </li>
+                                                                                            <li class="list-social__item  ">
+                                    <a href="https://www.facebook.com/nl.asmodee" class="list-social__link" target="_blank" rel="nofollow noopener noreferrer" aria-label="Facebook">
+                                              <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 3.50005C17 3.36745 16.9473 3.24027 16.8536 3.1465C16.7598 3.05273 16.6326 3.00005 16.5 3.00005H14C12.7411 2.93734 11.5086 3.37544 10.5717 4.21863C9.63485 5.06182 9.06978 6.24155 9 7.50005V10.2001H6.5C6.36739 10.2001 6.24021 10.2527 6.14645 10.3465C6.05268 10.4403 6 10.5674 6 10.7001V13.3001C6 13.4327 6.05268 13.5598 6.14645 13.6536C6.24021 13.7474 6.36739 13.8001 6.5 13.8001H9V20.5001C9 20.6327 9.05268 20.7598 9.14645 20.8536C9.24021 20.9474 9.36739 21.0001 9.5 21.0001H12.5C12.6326 21.0001 12.7598 20.9474 12.8536 20.8536C12.9473 20.7598 13 20.6327 13 20.5001V13.8001H15.62C15.7312 13.8017 15.8397 13.7661 15.9285 13.6991C16.0172 13.6321 16.0811 13.5374 16.11 13.4301L16.83 10.8301C16.8499 10.7562 16.8526 10.6787 16.8378 10.6036C16.8231 10.5286 16.7913 10.4579 16.7449 10.397C16.6985 10.3362 16.6388 10.2868 16.5704 10.2526C16.5019 10.2185 16.4265 10.2005 16.35 10.2001H13V7.50005C13.0249 7.25253 13.1411 7.02317 13.326 6.85675C13.5109 6.69033 13.7512 6.59881 14 6.60005H16.5C16.6326 6.60005 16.7598 6.54737 16.8536 6.45361C16.9473 6.35984 17 6.23266 17 6.10005V3.50005Z" fill="#fff"></path></svg>
+                                        </a>
+                                </li>
+                                                                                            <li class="list-social__item  ">
+                                    <a href="https://www.youtube.com/@AsmodeeTheNetherlands" class="list-social__link" target="_blank" rel="nofollow noopener noreferrer" aria-label="Youtube">
+                                              <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.8 7.19961C23.8 7.19961 23.6 5.49961 22.8 4.79961C21.9 3.79961 20.9 3.79961 20.4 3.79961C17 3.59961 12 3.59961 12 3.59961C12 3.59961 7 3.59961 3.6 3.79961C3.1 3.89961 2.1 3.89961 1.2 4.79961C0.5 5.49961 0.2 7.19961 0.2 7.19961C0.2 7.19961 0 9.09961 0 11.0996V12.8996C0 14.7996 0.2 16.7996 0.2 16.7996C0.2 16.7996 0.4 18.4996 1.2 19.1996C2.1 20.1996 3.3 20.0996 3.8 20.1996C5.7 20.3996 12 20.3996 12 20.3996C12 20.3996 17 20.3996 20.4 20.0996C20.9 19.9996 21.9 19.9996 22.8 19.0996C23.5 18.3996 23.8 16.6996 23.8 16.6996C23.8 16.6996 24 14.7996 24 12.7996V10.9996C24 9.09961 23.8 7.19961 23.8 7.19961ZM9.5 15.0996V8.39961L16 11.7996L9.5 15.0996Z" fill="#fff"></path></svg>
+                                        </a>
+                                </li>
+                                                                                            <li class="list-social__item  ">
+                                    <a href="https://www.tiktok.com/@asmodee_nl" class="list-social__link" target="_blank" rel="nofollow noopener noreferrer" aria-label="Tiktok">
+                                              <svg width="20" height="20" fill="#fff" viewBox="-0.32296740998066475 -3.1283528999801873 42.68446958125966 42.128352899980186">
+        <g fill="none">
+          <path d="M14 15.599v-1.486A13.1 13.1 0 0 0 12.337 14C5.535 14 0 19.18 0 25.547 0 29.452 2.086 32.91 5.267 35c-2.13-2.132-3.315-4.942-3.313-7.861 0-6.276 5.377-11.394 12.046-11.54" fill="#00f2ea"></path>
+          <path d="M14.327 32c2.876 0 5.221-2.273 5.328-5.107l.01-25.292h4.65A8.72 8.72 0 0 1 24.164 0h-6.35l-.011 25.293c-.106 2.832-2.453 5.105-5.328 5.105a5.329 5.329 0 0 1-2.476-.61A5.34 5.34 0 0 0 14.327 32m18.672-21.814V8.78a8.818 8.818 0 0 1-4.81-1.421A8.85 8.85 0 0 0 33 10.186" fill="#00f2ea"></path>
+          <path d="M28 7.718A8.63 8.63 0 0 1 25.832 2h-1.697A8.735 8.735 0 0 0 28 7.718M12.325 20.065c-2.94.004-5.322 2.361-5.325 5.27A5.267 5.267 0 0 0 9.854 30a5.2 5.2 0 0 1-1.008-3.073c.003-2.91 2.385-5.268 5.325-5.271.55 0 1.075.09 1.572.244v-6.4a11.72 11.72 0 0 0-1.572-.114c-.092 0-.183.006-.274.007v4.916a5.286 5.286 0 0 0-1.572-.244" fill="#ff004f"></path>
+          <path d="M32.153 11v4.884a15.15 15.15 0 0 1-8.813-2.811V25.84c0 6.377-5.23 11.565-11.658 11.565-2.485 0-4.789-.778-6.682-2.097A11.67 11.67 0 0 0 13.528 39c6.429 0 11.659-5.188 11.659-11.564V14.668A15.15 15.15 0 0 0 34 17.478v-6.283A8.87 8.87 0 0 1 32.153 11" fill="#ff004f"></path>
+          <path d="M23.979 25.42V12.632A15.741 15.741 0 0 0 33 15.448v-4.89a9.083 9.083 0 0 1-4.912-2.82C26.016 6.431 24.586 4.358 24.132 2h-4.747l-.01 25.215c-.11 2.824-2.505 5.09-5.44 5.09-1.754-.002-3.398-.822-4.42-2.204-1.794-.913-2.919-2.716-2.92-4.682.003-2.92 2.44-5.285 5.45-5.289.56 0 1.098.09 1.608.245v-4.933C7.202 15.589 2 20.722 2 27.016c0 3.045 1.219 5.816 3.205 7.885A12.115 12.115 0 0 0 12.045 37c6.58 0 11.934-5.195 11.934-11.58" fill="currentColor"></path>
+        </g>
+      </svg>
+                                        </a>
+                                </li>
+                                                    </ul>
+                    </div>
+
+                            </div>
+        </nav>
+    </div>
+    <div class="footer__bottom bg-neutral-950 lg:bg-neutral-900 relative">
+        <div class="absolute top-0 left-1/2 w-full -translate-y-2/3 -translate-x-1/2 [&amp;&gt;svg]:-translate-x-[2.5%] [&amp;&gt;svg]:w-[105%] [&amp;&gt;svg]:min-w-[600px] text-neutral-950 block lg:hidden overflow-hidden">
+            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 56"><g clip-path="url(#clip0_864_257)"><path d="M2598.9 160.516L2495.49 137.404L2405.16 152.415L2314.84 174.956L2224.52 155.266L2134.2 141.254L2043.88 161.096L1953.55 172.48L1863.23 143.22L1772.92 177.431L1682.59 154.515L1592.27 165.436L1501.95 162.368L1411.63 174.726L1321.31 126.566L1230.99 172.219L1140.67 141.54L1050.34 145.683L960.024 163.253L869.699 127.661L779.373 152.804L689.054 137.372L598.729 153.905L508.403 173.81L418.084 133.586L327.759 166.454L237.44 127.139L147.114 128.456L56.7888 170.889L-33.5366 158.003L-123.862 131.836L-222.925 157.417L-202.039 32.5756L-123.875 2.94007L-33.5494 15.1646L56.7697 24.7483L147.095 20.4273L237.414 37.6219L327.74 19.5554L418.059 10.4683L508.384 6.21092L598.697 21.7383L689.022 0.910112L779.342 24.2901L869.661 7.01274L959.98 22.1646L1050.31 30.5773L1140.62 20.3891L1230.95 33.6128L1321.27 15.8838L1411.59 12.5554L1501.91 34.6818L1592.24 0L1682.56 3.48105L1772.88 22.6865L1863.21 37.9847L1953.53 49.0318L2043.85 33.9883L2134.18 2.8509L2224.5 25.0155L2314.82 42.5856L2405.15 44.641L2495.48 8.61639L2590.17 20.6438L2598.9 160.516Z" fill="currentColor"></path></g><defs><clipPath id="clip0_864_257"><path fill="#fff" transform="translate(-212)" d="M0 0H2800V56H0z"></path></clipPath></defs></svg>        </div>
+        <div class="container mt-[2vw] lg:mt-0 flex flex-col-reverse lg:flex-row justify-between py-6 text-white text-[14px] font-medium items-center gap-5">
+            
+                                        <ul class="footer__list flex gap-x-5 md:gap-x-10 gap-y-1 whitespace-nowrap flex-wrap justify-center md:justify-end">
+                                                                                        <li class="">
+                            <a href="https://www.asmodee.nl/legal-mentions/" class="hover:underline" rel="noopener noreferrer" aria-label="Juridische vermeldingen">Juridische vermeldingen</a>
+                        </li>
+                                                                    <li class="">
+                            <a href="https://www.asmodee.nl/global-data-privacy-policy/" class="hover:underline" rel="noopener noreferrer" aria-label="Privacy beleid">Privacy beleid</a>
+                        </li>
+                                                                    <li class="">
+                            <a href="https://www.asmodee.nl/terms-of-use/" class="hover:underline" rel="noopener noreferrer" aria-label="Gebruiksvoorwaarden">Gebruiksvoorwaarden</a>
+                        </li>
+                                                                    <li class="">
+                            <a href="https://www.asmodee.nl/privacy-notice/" class="hover:underline" rel="noopener noreferrer" aria-label="Privacyverklaring">Privacyverklaring</a>
+                        </li>
+                    
+                                    </ul>
+                    </div>
+    </div>
+</footer>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/production-asmodeenl\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/unboxnow-du\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<style id="core-block-supports-inline-css" type="text/css">
+.wp-container-core-columns-is-layout-9d6595d7{flex-wrap:nowrap;}
+</style>
+<script type="text/javascript" id="asmodee-newsletter-js-js-extra">
+/* <![CDATA[ */
+var asmodee_newsletter = {"ajaxurl":"https:\/\/www.asmodee.nl\/wp-admin\/admin-ajax.php","assets_url":"https:\/\/www.asmodee.nl\/wp-content\/plugins\/asmodee-newsletter\/assets\/img\/","nonce_newsletter":"d090f25b3b","txt_loading":"Inschrijving wordt geregistreerd","txt_user_subscribed":"Je bent nu geabonneerd!","txt_user_subscribed_confirm":"Een e-mail ter bevestiging werd verzonden!","txt_user_invalid_email":"Ongeldig emailadres","txt_user_already_registred":"Gebruiker al geregistreerd","txt_user_error":"Er is een fout opgetreden"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.asmodee.nl/wp-content/plugins/asmodee-newsletter/assets/js/newsletter.js?ver=1.0.0" id="asmodee-newsletter-js-js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-autocomplete/1.0.7/jquery.auto-complete.min.js?ver=1.0.7" id="jquery-auto-complete-js"></script>
+<script type="text/javascript" id="search-js-extra">
+/* <![CDATA[ */
+var search = {"search_api":"https:\/\/www.asmodee.nl\/wp-json\/asmodee_search_autocomplete\/v1\/search"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.asmodee.nl/wp-content/plugins/asmodee-search-autocomplete//js/search.min.js?ver=1.0.0" id="search-js"></script>
+<script type="text/javascript" id="unboxnow-load-more-js-extra">
+/* <![CDATA[ */
+var unboxnow_load_more_options = {"ajaxurl":"https:\/\/www.asmodee.nl\/wp-admin\/admin-ajax.php","posts":"{\"page\":0,\"pagename\":\"orange-league\",\"error\":\"\",\"m\":\"\",\"p\":0,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"orange-league\",\"page_id\":0,\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"all\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":10,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}","current_page":"1","max_page":"0","found_posts":"1","txt_loading":"Loading","txt_more":"Laad meer","lang":"en"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.asmodee.nl/wp-content/themes/unboxnow-du/js/unboxnow-load-more.js?ver=0.1" id="unboxnow-load-more-js"></script>
+<script type="text/javascript" src="https://www.asmodee.nl/wp-content/themes/unboxnow-du/js/unboxnow-tagging-datalayer.js?ver=0.5" id="unboxnow-tagging-datalayer-js"></script>
+<script type="text/javascript" src="https://www.asmodee.nl/wp-content/themes/unboxnow-du/js/unboxnow-header.js?ver=0.1" id="unboxnow-header-js"></script>
+<script type="text/javascript" id="unboxnow-filter-products-js-extra">
+/* <![CDATA[ */
+var unboxnow_filter_products_options = {"ajaxurl":"https:\/\/www.asmodee.nl\/wp-admin\/admin-ajax.php","params":[],"ppp":"12","current_page_tax":{"ID":6194,"post_author":"16","post_date":"2025-06-17 11:04:23","post_date_gmt":"2025-06-17 09:04:23","post_content":"<!-- wp:image {\"id\":6222,\"width\":\"594px\",\"height\":\"auto\",\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-large is-resized\"><img src=\"https:\/\/cdn.svc.asmodee.net\/production-asmodeenl\/uploads\/image-converter\/2025\/06\/OrangeLeague-1024x541.webp\" alt=\"\" class=\"wp-image-6222\" style=\"width:594px;height:auto\"\/><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:paragraph -->\n<p>Altijd ervan gedroomd om een <strong>Pok\u00e9mon Master<\/strong> te worden door Gym Badges te verzamelen en een daadwerkelijke <strong>Champion <\/strong>te worden? Dat kan met de <strong>Orange League<\/strong>, waarbij je met de Pok\u00e9mon TCG verschillende winkels kunt bezoeken om te spelen en fysieke badges kunt winnen! <\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Of je nu het spel eindelijk wil gaan leren, of al een doorgewinterde veteraan bent, de Orange League biedt je een ervaring zoals je nooit eerder hebt beleefd! Check bij welke winkels je terecht kan en verzamel je eerste <strong>8 badges<\/strong>!<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:image {\"id\":6217,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F06%2Fpokemon2-1024x683.jpg&amp;attachment_id=6217\" alt=\"\" class=\"wp-image-6217\"\/><\/figure>\n<!-- \/wp:image --><\/div>\n<!-- \/wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:image {\"id\":6218,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F06%2Fpokemon1-1024x683.jpg&amp;attachment_id=6218\" alt=\"\" class=\"wp-image-6218\"\/><\/figure>\n<!-- \/wp:image --><\/div>\n<!-- \/wp:column --><\/div>\n<!-- \/wp:columns -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\" id=\"h-wat-is-de-orange-league\"><strong>Wat is de Orange League?<\/strong><\/h2>\n<!-- \/wp:heading -->\n\n<!-- wp:paragraph -->\n<p><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>\u2022 &nbsp; &nbsp; Een toegankelijk Pok\u00e9mon-evenement voor spelers van alle leeftijden<br>\u2022 &nbsp; &nbsp; Spelers verzamelen badges (net als in de Pok\u00e9mon-games) door DRIE laagdrempelige<br>&nbsp; &nbsp; &nbsp; potjes te spelen tegen verschillende tegenstanders<br>\u2022 &nbsp; &nbsp; Iedere badge vertegenwoordigt een winkel en eventueel thema die ze willen overbrengen<br>\u2022 &nbsp; &nbsp; Spelers hoeven niet te winnen \u2013 de nadruk ligt op meedoen, plezier en leren!<br>\u2022 &nbsp; &nbsp; Je hoeft geen offici\u00eble toernooi-speler te zijn; het is ook geschikt voor casual spelers of beginners<br>\u2022 &nbsp; &nbsp; Spelers kunnen badges verzamelen bij 29 verschillende deelnemende winkels<br>\u2022 &nbsp; &nbsp; Aan het eind is er een finale of een speciaal event (met als richtdatum 28-02-2026) voor iedereen die <br>  &nbsp; &nbsp;  &nbsp; MINSTENS 8 badges verzameld heeft: meer info hierover volgt.<br>\u2022 &nbsp; &nbsp; Het verzamelen van badges kan vanaf 25-06-2025 t\/m 01-02-2026<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Je speelt in een toegankelijk format met aangepaste regels; de zogeheten '<strong>Showcase Format<\/strong>'. <br>De Showcase Format wordt gespeeld met:<br>\u2022 &nbsp; &nbsp; Een half-deck, dus 30 kaarten (en 3 prize cards in plaats van 6).<br>\u2022 &nbsp; &nbsp; Single type Pok\u00e9mon in je deck (dus bijvoorbeeld allemaal Grass of allemaal Fire).<br>\u2022 &nbsp; &nbsp; Enige uitzondering is Eevee, die als colorless begint.<br>\u2022 &nbsp; &nbsp; \u00c9\u00e9n enkele ex-kaart toegestaan in het deck (dat is je \u2018showcase\u2019 kaart).<br>\u2022 &nbsp; &nbsp; Maximaal 2 van elke kaart in je deck (behalve natuurlijk Energy).<br>\u2022 &nbsp; &nbsp; Geen kaarten ouder dan SV1.<br>\u2022 &nbsp; &nbsp; Geen Special Energy is toegestaan.<br>\u2022 &nbsp; &nbsp; ACE-SPEC kaarten zijn wel toegestaan.<br>\u2022 &nbsp; &nbsp; Kaarten die bijvoorbeeld roepen dat Special Energy kan worden getrokken zijn echter nutteloos.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\" id=\"h-check-de-deelnemende-winkels-hieronder-en-meld-je-aan\">Check de deelnemende winkels hieronder en meld je aan!<\/h3>\n<!-- \/wp:heading -->\n\n<!-- wp:paragraph -->\n<p><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:image {\"id\":6310,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague01.png&amp;attachment_id=6310\" alt=\"\" class=\"wp-image-6310\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/www.speedytoys.nl\/the-orange-league-is-terug\/\" target=\"_blank\" rel=\"noreferrer noopener\">Speedytoys<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"lightbox\":{\"enabled\":false},\"id\":6313,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague04.png&amp;attachment_id=6313\" alt=\"\" class=\"wp-image-6313\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/www.moxspellen.nl\/webshop\/agenda\/pokemon-the-orange-league\/\" target=\"_blank\" rel=\"noreferrer noopener\">Mox Spellen<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6317,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague07.png&amp;attachment_id=6317\" alt=\"\" class=\"wp-image-6317\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/www.despellenhoorn.nl\/events\/categories\/pokemon\/\" target=\"_blank\" rel=\"noreferrer noopener\">De Spellenhoorn<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"lightbox\":{\"enabled\":false},\"id\":6320,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague10.png&amp;attachment_id=6320\" alt=\"\" class=\"wp-image-6320\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/www.purperendraak.nl\/evenementen\/\" target=\"_blank\" rel=\"noreferrer noopener\">Purperen Draak<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6323,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague13.png&amp;attachment_id=6323\" alt=\"\" class=\"wp-image-6323\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/mojocards.nl\/pages\/doe-mee-aan-de-orange-league-bij-mojo-cards-enschede\" target=\"_blank\" rel=\"noreferrer noopener\">Mojocards \/ Pan&amp;Tung V.O.F.<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6326,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague16.png&amp;attachment_id=6326\" alt=\"\" class=\"wp-image-6326\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/spelenmeer.nl\/tradingcardgames-pokemon\/\" target=\"_blank\" rel=\"noreferrer noopener\">Spel en Meer<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6329,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague19.png&amp;attachment_id=6329\" alt=\"\" class=\"wp-image-6329\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/welpietoys.nl\/p\/orange-league\/\" target=\"_blank\" rel=\"noreferrer noopener\">Welpie Toys<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6332,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague22.png&amp;attachment_id=6332\" alt=\"\" class=\"wp-image-6332\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/www.organizedplay.nl\/html\/NL\/toernooiagenda_TCG.html\">De <\/a><a href=\"https:\/\/www.organizedplay.nl\/html\/NL\/toernooiagenda_TCG.html\" target=\"_blank\" rel=\"noreferrer noopener\">Tafelridder<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6335,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague25.png&amp;attachment_id=6335\" alt=\"\" class=\"wp-image-6335\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/www.bazaarofmagic.eu\/nl-NL\/events?game=7\" target=\"_blank\" rel=\"noreferrer noopener\">Bazaar of Magic<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6338,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague28.png&amp;attachment_id=6338\" alt=\"\" class=\"wp-image-6338\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/www.facebook.com\/pokemonleaguetwente.dedondersteen\" target=\"_blank\" rel=\"noreferrer noopener\">De Dondersteen<\/a><\/figcaption><\/figure>\n<!-- \/wp:image --><\/div>\n<!-- \/wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:image {\"id\":6311,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague02.png&amp;attachment_id=6311\" alt=\"\" class=\"wp-image-6311\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/poke-maat.nl\/orange-league-2025\/\" target=\"_blank\" rel=\"noreferrer noopener\">Poke-Maat<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6314,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague05.png&amp;attachment_id=6314\" alt=\"\" class=\"wp-image-6314\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/amsterdam-toys.com\/events\/\" target=\"_blank\" rel=\"noreferrer noopener\">Amsterdam Toys<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6318,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague08.png&amp;attachment_id=6318\" alt=\"\" class=\"wp-image-6318\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/www.douze.nu\/pagina\/orange-league\" target=\"_blank\" rel=\"noreferrer noopener\">Douze No12<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6321,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague11.png&amp;attachment_id=6321\" alt=\"\" class=\"wp-image-6321\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/www.spellenspeciaalzaak013.nl\/evenementen\/\" target=\"_blank\" rel=\"noreferrer noopener\">Labyrinth Tilburg<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6324,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague14.png&amp;attachment_id=6324\" alt=\"\" class=\"wp-image-6324\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/daansshop.com\/\" target=\"_blank\" rel=\"noreferrer noopener\">Daans Shop<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6327,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague17.png&amp;attachment_id=6327\" alt=\"\" class=\"wp-image-6327\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/urbancardhouse.nl\/pages\/pokemon-orange-league\" target=\"_blank\" rel=\"noreferrer noopener\">Urban Cardhouse<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6330,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague20.png&amp;attachment_id=6330\" alt=\"\" class=\"wp-image-6330\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/www.playourgames.nl\/\" target=\"_blank\" rel=\"noreferrer noopener\">Playourgames<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6333,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague23.png&amp;attachment_id=6333\" alt=\"\" class=\"wp-image-6333\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/uniquebrickstore.com\/\" target=\"_blank\" rel=\"noreferrer noopener\">Unique Brickstore<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6336,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague26.png&amp;attachment_id=6336\" alt=\"\" class=\"wp-image-6336\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/side7.nl\/?cnSelected=603e733f-bfb5-4528-9f62-1f2a9a773c0c-recurring-1\" target=\"_blank\" rel=\"noreferrer noopener\">Side7<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6339,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague29.png&amp;attachment_id=6339\" alt=\"\" class=\"wp-image-6339\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/www.collectorstore.nl\/product-categorie\/orange-league\/\" target=\"_blank\" rel=\"noreferrer noopener\">Collector Store<\/a><\/figcaption><\/figure>\n<!-- \/wp:image --><\/div>\n<!-- \/wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:image {\"id\":6312,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague03.png&amp;attachment_id=6312\" alt=\"\" class=\"wp-image-6312\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/hetbeeldverhaal.nl\/product-categorie\/all-trading-card-games\/orange-league-pokemon\/\" target=\"_blank\" rel=\"noreferrer noopener\">Het Beeldverhaal<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6315,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague06.png&amp;attachment_id=6315\" alt=\"\" class=\"wp-image-6315\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/halte13.nl\/\" target=\"_blank\" rel=\"noreferrer noopener\">Halte 13<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6319,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague09.png&amp;attachment_id=6319\" alt=\"\" class=\"wp-image-6319\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/www.tcgcenter.nl\/nl\/content\/25-pokemon-orange-league\" target=\"_blank\" rel=\"noreferrer noopener\">Trading Card Games Center<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6322,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague12.png&amp;attachment_id=6322\" alt=\"\" class=\"wp-image-6322\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/arlytrading.nl\/the-orange-league-arlytoys-tcg\/\" target=\"_blank\" rel=\"noreferrer noopener\">ArlyToys Speelgoed en TCG<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6325,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague15.png&amp;attachment_id=6325\" alt=\"\" class=\"wp-image-6325\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/deschildknaap.nl\/evenementen\/orange-league\/\">De <\/a><a href=\"https:\/\/deschildknaap.nl\/evenementen\/orange-league\/\" target=\"_blank\" rel=\"noreferrer noopener\">Schildknaap<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6328,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague18.png&amp;attachment_id=6328\" alt=\"\" class=\"wp-image-6328\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/www.gamerzparadize.nl\/nl\/events\/pokemon-orange-league\/\" target=\"_blank\" rel=\"noreferrer noopener\">GamerzParadize<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6331,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague21.png&amp;attachment_id=6331\" alt=\"\" class=\"wp-image-6331\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/www.titangames.nl\/agenda-item\/titan-games-orange-league\/\" target=\"_blank\" rel=\"noreferrer noopener\">Titan Games<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"id\":6334,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague24.png&amp;attachment_id=6334\" alt=\"\" class=\"wp-image-6334\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/tabletopkingdom.nl\/event\/?category=140&amp;location=\" target=\"_blank\" rel=\"noreferrer noopener\">Tabletop Kingdom<\/a><\/figcaption><\/figure>\n<!-- \/wp:image -->\n\n<!-- wp:image {\"lightbox\":{\"enabled\":false},\"id\":6337,\"width\":\"270px\",\"height\":\"auto\",\"sizeSlug\":\"full\",\"linkDestination\":\"custom\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img src=\"https:\/\/www.asmodee.nl\/image-converter?url=https%3A%2F%2Fcdn.svc.asmodee.net%2Fproduction-asmodeenl%2Fuploads%2F2025%2F07%2FOrangeLeague27.png&amp;attachment_id=6337\" alt=\"\" class=\"wp-image-6337\" style=\"width:270px;height:auto\"\/><figcaption class=\"wp-element-caption\"><a href=\"https:\/\/www.tcg-cards.nl\/\" target=\"_blank\" rel=\"noreferrer noopener\">TCG Cards<\/a><\/figcaption><\/figure>\n<!-- \/wp:image --><\/div>\n<!-- \/wp:column --><\/div>\n<!-- \/wp:columns -->\n\n<!-- wp:paragraph -->\n<p><figure class=\"wp-block-image size-full\"><\/figure> <\/p>\n<!-- \/wp:paragraph -->","post_title":"","post_excerpt":"","post_status":"publish","comment_status":"closed","ping_status":"closed","post_password":"","post_name":"orange-league","to_ping":"","pinged":"","post_modified":"2025-07-15 10:25:00","post_modified_gmt":"2025-07-15 08:25:00","post_content_filtered":"","post_parent":0,"guid":"https:\/\/www.asmodee.nl\/?page_id=6194","menu_order":0,"post_type":"page","post_mime_type":"","comment_count":"0","filter":"raw"},"current_page":"1","max_page":"0","txt_loading":"Loading","txt_more":"Laad meer"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.asmodee.nl/wp-content/themes/unboxnow-du/js/unboxnow-filter-products.js?ver=0.1" id="unboxnow-filter-products-js"></script>
+<script type="text/javascript" src="https://www.asmodee.nl/wp-content/themes/unboxnow-du/js/unbox-now-suggestion-engine-iframe.js?ver=0.1" id="unboxnow-suggestion-engine-iframe-js"></script>
+
+
+
+<div class="autocomplete-suggestions " style="top: 1961px; left: 1173px; width: 58px;"></div><div id="82C7516C-991E-441B-C5EE-F52F6CFBEBCD"></div><iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe><iframe id="nr-ext-rsicon" style="position: absolute; display: none; width: 50px; height: 50px; z-index: 2147483647; border-style: none; background: transparent; top: 4912px; left: 948px;"></iframe></body>

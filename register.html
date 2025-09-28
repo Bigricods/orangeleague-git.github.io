@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <title>Registratie - Orange League</title>
+  <title>Orange League Badges</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,32 +11,267 @@
       <img src="logo.png" alt="Orange League Logo" class="logo">
     </a>
     <nav>
-      <a href="home.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="register.html">Registratie</a>
-    </nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="register.html">Tracker</a></li>
+    </ul>
+  </nav>
   </header>
 
-  <main>
-    <h1>Registratie</h1>
-    <form id="registerForm">
-      <label>
-        <input type="checkbox" name="nieuwsbrief"> Inschrijven voor nieuwsbrief
-      </label><br>
-      <label>
-        <input type="checkbox" name="toernooien"> Meedoen aan toernooien
-      </label><br>
-      <label>
-        <input type="checkbox" name="community"> Deel uitmaken van de community
-      </label><br>
+  <main class="register-page">
+  <h1 class="page-title">Welkom Trainers!</h1>
+  <p class="intro-text">
+    Hou hier jouw verzamelde <strong>Orange League Badges</strong> bij!<br>
+    Elke badge vertelt jouw verhaal als trainer. Verzamel ze allemaal en werk toe naar de finale van 28-02-2026! ✨
+  </p>
 
-      <button type="submit">Opslaan</button>
+    <form id="registerForm">
+      <div class="registration-grid grid">
+        
+        <label class="card registration-card" for="badge_01">
+          <input type="checkbox" name="badge_01" id="badge_01" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague01.webp" alt="Badge 01 Icoon" class="card-image">
+          <h3>Meister van de Storm</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_02">
+          <input type="checkbox" name="badge_02" id="badge_02" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague02.webp" alt="Badge 02 Icoon" class="card-image">
+          <h3>De Eenzaamheid van de Wolf</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_03">
+          <input type="checkbox" name="badge_03" id="badge_03" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague03.webp" alt="Badge 03 Icoon" class="card-image">
+          <h3>Scherpschutter Focus</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_04">
+          <input type="checkbox" name="badge_04" id="badge_04" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague04.webp" alt="Badge 04 Icoon" class="card-image">
+          <h3>Tafelblad Tacticus</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_05">
+          <input type="checkbox" name="badge_05" id="badge_05" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague05.webp" alt="Badge 05 Icoon" class="card-image">
+          <h3>Stadswacht van de Grachten</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_06">
+          <input type="checkbox" name="badge_06" id="badge_06" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague06.webp" alt="Badge 06 Icoon" class="card-image">
+          <h3>Vrolijke Mascotte Vriend</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_07">
+          <input type="checkbox" name="badge_07" id="badge_07" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague07.webp" alt="Badge 07 Icoon" class="card-image">
+          <h3>Mythische Vinder	</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_08">
+          <input type="checkbox" name="badge_08" id="badge_08" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague08.webp" alt="Badge 08 Icoon" class="card-image">
+          <h3>Geheime Zoete Overwinning</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_09">
+          <input type="checkbox" name="badge_09" id="badge_09" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague09.webp" alt="Badge 09 Icoon" class="card-image">
+          <h3>Meester van de Vloeiende Aanval</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_10">
+          <input type="checkbox" name="badge_10" id="badge_10" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague10.webp" alt="Badge 10 Icoon" class="card-image">
+          <h3>Hoogste Toren Klimmer</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_11">
+          <input type="checkbox" name="badge_11" id="badge_11" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague11.webp" alt="Badge 11 Icoon" class="card-image">
+          <h3>Meister van de Zes Zeges</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_12">
+          <input type="checkbox" name="badge_12" id="badge_12" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague12.webp" alt="Badge 12 Icoon" class="card-image">
+          <h3>Kritieke Rol Speler</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_13">
+          <input type="checkbox" name="badge_13" id="badge_13" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague13.webp" alt="Badge 13 Icoon" class="card-image">
+          <h3>Mystieke Voorspeller</h3>
+         <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_14">
+          <input type="checkbox" name="badge_14" id="badge_14" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague14.webp" alt="Badge 14 Icoon" class="card-image">
+          <h3>Vrolijke Begeleider</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_15">
+          <input type="checkbox" name="badge_15" id="badge_15" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague15.webp" alt="Badge 15 Icoon" class="card-image">
+          <h3>De IJzeren Verdediger</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_16">
+          <input type="checkbox" name="badge_16" id="badge_16" class="hidden-checkbox">
+          <span class="card-badge">Badge 16 🏆</span>
+          <img src="OrangeLeague16.webp" alt="Badge 16 Icoon" class="card-image">
+          <h3>Onstuitbare Rush</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_17">
+          <input type="checkbox" name="badge_17" id="badge_17" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague17.webp" alt="Badge 17 Icoon" class="card-image">
+          <<h3>Oude Kennis Bewaker</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_18">
+          <input type="checkbox" name="badge_18" id="badge_18" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague18.webp" alt="Badge 18 Icoon" class="card-image">
+          <h3>Vuurproef Voltooid</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_19">
+          <input type="checkbox" name="badge_19" id="badge_19" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague19.webp" alt="Badge 19 Icoon" class="card-image">
+          <h3>Koning van de Kaarten</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_20">
+          <input type="checkbox" name="badge_20" id="badge_20" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague20.webp" alt="Badge 20 Icoon" class="card-image">
+          <h3>Drie-eenheid Meester</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_21">
+          <input type="checkbox" name="badge_21" id="badge_21" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague21.webp" alt="Badge 21 Icoon" class="card-image">
+          <h3>Vlam van de Kans</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_22">
+          <input type="checkbox" name="badge_22" id="badge_22" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague22.webp" alt="Badge 22 Icoon" class="card-image">
+          <h3>Meester van Geheimen</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_23">
+          <input type="checkbox" name="badge_23" id="badge_23" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague23.webp" alt="Badge 23 Icoon" class="card-image">
+          <h3>De Bouwer</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_24">
+          <input type="checkbox" name="badge_24" id="badge_24" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague24.webp" alt="Badge 24 Icoon" class="card-image">
+          <h3>Groot Toernooi Deelnemer</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_25">
+          <input type="checkbox" name="badge_25" id="badge_25" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague25.webp" alt="Badge 25 Icoon" class="card-image">
+          <h3>De Diversiteit Prijs</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_26">
+          <input type="checkbox" name="badge_26" id="badge_26" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague26.webp" alt="Badge 26 Icoon" class="card-image">
+          <h3>Precisie Voltooiing</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_27">
+          <input type="checkbox" name="badge_27" id="badge_27" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague27.webp" alt="Badge 27 Icoon" class="card-image">
+          <h3>Regionale Kampioen</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_28">
+          <input type="checkbox" name="badge_28" id="badge_28" class="hidden-checkbox">
+          <span class="card-badge">Badge 🏆</span>
+          <img src="OrangeLeague28.webp" alt="Badge 28 Icoon" class="card-image">
+          <h3>Goddelijke Interventie</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        
+        <label class="card registration-card" for="badge_29">
+          <input type="checkbox" name="badge_29" id="badge_29" class="hidden-checkbox">
+          <span class="card-badge">Badge🏆</span>
+          <img src="OrangeLeague29.webp" alt="Badge 29 Icoon" class="card-image">
+          <h3>Orange League Legende</h3>
+          <div class="checkbox-indicator"></div>
+        </label>
+        </div>
+
+      </div>
+      
+      <button type="submit" class="cta save-button">Instellingen Opslaan</button>
     </form>
     <p id="status"></p>
   </main>
 
   <footer>
-    <p>© 2025 Orange League</p>
+    <p>© 2025 The Orange League Tracker - Niet verbonden aan Asmodee, 
+     wel geïnspireerd door hun geweldige idee!</p>
   </footer>
 
   <script>
@@ -48,9 +283,28 @@
       [...form.elements].forEach(input => {
         if (input.type === "checkbox") {
           input.checked = localStorage.getItem(input.name) === "true";
+          // Visuele update van de kaart bij het laden
+          const label = input.closest('label');
+          if (input.checked) {
+            label.classList.add('checked');
+          } else {
+            label.classList.remove('checked');
+          }
         }
       });
     };
+    
+    // Visuele update van de kaart bij het klikken
+    form.addEventListener('change', (e) => {
+        if (e.target.type === 'checkbox') {
+            const label = e.target.closest('label');
+            if (e.target.checked) {
+                label.classList.add('checked');
+            } else {
+                label.classList.remove('checked');
+            }
+        }
+    });
 
     // Vinkjes opslaan
     form.addEventListener("submit", e => {
@@ -61,6 +315,8 @@
         }
       });
       status.textContent = "Instellingen opgeslagen!";
+      status.style.color = "darkgreen"; // Maak de status zichtbaarder
+      setTimeout(() => status.textContent = "", 3000); // Wis de status na 3 seconden
     });
   </script>
 </body>

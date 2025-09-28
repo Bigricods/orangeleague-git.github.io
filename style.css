@@ -1,3 +1,4 @@
+/* 🌐 Basisstijl (geldt overal) */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,6 +7,7 @@ body {
   color: #333;
 }
 
+/* Header & Navigatie */
 header {
   background: orange;
   color: white;
@@ -16,7 +18,7 @@ header {
 }
 
 header .logo {
-  height: 50px;
+  height: 80px;
   cursor: pointer;
 }
 
@@ -27,20 +29,381 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
   text-decoration: underline;
 }
 
-main {
-  padding: 20px;
-}
-
+/* Footer */
 footer {
   background: #222;
-  color: white;
+  color: #f0f0f0;
   text-align: center;
-  padding: 10px;
+  font-size: 0.9rem;
+  padding: 15px;
   position: fixed;
   width: 100%;
   bottom: 0;
+  z-index: 100;  
+}
+
+footer p {
+  margin: 0;
+  font-style: italic;
+  color: #ffb84d; /* subtiel oranje tintje */
+}
+
+/* Zorg dat content niet achter de footer verdwijnt */
+main {
+  padding-bottom: 80px;
+}
+
+/* 🎉 Pagina-specifieke stijlen */
+main.welcome-page,
+main.home,
+main.about {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Welkomstpagina */
+main.welcome-page h1 {
+  font-size: 2.5rem;
+  color: orange;
+}
+
+main.welcome-page .logo-center img {
+  margin-top: 20px;
+  width: 400px;
+  height: auto;
+}
+main.home-page .logo-center img {
+  margin-top: 20px;
+  width: 250px;
+  height: auto;
+}
+
+/* Homepagina */
+.hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(orange, #ffcc80);
+      border-radius: 12px;
+      margin: 30px auto;
+      max-width: 900px;
+      color: #222;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    .hero p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 28px;
+      background: darkorange;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .cta:hover {
+      background: #cc5200;
+    }
+.home .hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(orange, #ffcc80);
+  color: #222;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.home section {
+  margin: 30px 0;
+}
+
+.home h2 {
+  color: darkorange;
+  margin-bottom: 10px;
+}
+
+main.home .cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: orange;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+main.home .cta:hover,
+main.home .cta:focus {
+  background: darkorange;
+}
+
+/* Aboutpagina */
+main.about {
+  padding: 20px 40px;
+}
+
+main.about .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+main.about .card {
+  background: #fff3e0;
+  border: 2px solid orange;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* 🛒 Shop grids */
+.shop-grid,
+.grid {
+  display: grid;
+  /* Standaard voor mobiel/kleinere schermen: zoveel mogelijk kaarten van min. 180px */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+
+  /* NIEUW: Maximale breedte 80% en centreren */
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* NIEUWE MEDIA QUERY: Zodra het scherm breed genoeg is, gaan we naar max 7 kolommen */
+@media (min-width: 1400px) { /* Pas de 1400px aan naar wens */
+  .shop-grid,
+  .grid {
+    /* Harde limiet van 7 kolommen op grotere schermen */
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+.shop-grid span,
+.card {
+  background: #fff;
+  border: 2px solid #ffa733;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.shop-grid span {
+  background: #fff3e0;
+}
+
+.card:hover,
+.card:focus {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background: #fff6eb;
+}
+
+.shops h2 {
+  text-align: center;
+}
+/* Nieuwe stijl voor de button-link in de card */
+.card a {
+    /* Button-eigenschappen */
+    display: block; 
+    padding: 8px 10px;
+    margin-top: 10px;
+    background: #4285F4; /* Google Maps Blauw */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.card a:hover {
+    background: #3c78d8;
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+
+/* Nieuwe stijlen voor de registratiepagina */
+
+.registration-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Maak de kaarten iets breder voor de inhoud */
+    max-width: 900px; /* Een vaste max-width is hier mooier */
+    margin-bottom: 30px;
+}
+
+.registration-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Voor de badge en de indicator */
+    cursor: pointer;
+    text-align: center;
+    padding-top: 40px; /* Ruimte voor de badge */
+    min-height: 250px;
+    background: #fff;
+}
+
+.registration-card h3 {
+    color: orange;
+    margin: 10px 0 5px 0;
+}
+
+.card-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 10px 0;
+}
+
+/* De Badge */
+.card-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: darkorange;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* De visuele indicator (het vinkje) */
+.checkbox-indicator {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+    background: white;
+    transition: all 0.2s ease;
+}
+
+/* Visuele staat: Wanneer de kaart is aangevinkt */
+.registration-card.checked {
+    border-color: darkgreen;
+    background: #e6ffe6; /* Lichtgroene achtergrond */
+    box-shadow: 0 0 15px darkgreen;
+}
+
+.registration-card.checked .checkbox-indicator {
+    background: darkgreen;
+    border-color: darkgreen;
+}
+
+/* Het daadwerkelijke vinkje (kleine witte lijn) in de indicator */
+.registration-card.checked .checkbox-indicator::after {
+    content: '✓';
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Verberg de originele checkbox */
+.hidden-checkbox {
+    /* Absolute positionering buiten beeld om het element te verbergen maar functioneel te houden */
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+/* Stijl de Opslaan knop */
+.save-button {
+    margin: 30px auto;
+    display: block;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.2em;
+  color: #ff6600;
+  margin-top: 20px;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 1.2em;
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: orange;
+  color: white;
+  padding: 10px 20px;
+
+  display: flex;
+  flex-direction: column; /* Logo boven, menu onder */
+  align-items: center;   /* Centreer alles */
+  justify-content: center;
+  gap: 10px; /* ruimte tussen logo en menu */
+}
+
+header .logo {
+  height: 80px;
+  cursor: pointer;
+}
+
+/* Menu */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  gap: 20px; /* ruimte tussen knoppen */
+  justify-content: center;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+  background: darkorange;
 }
